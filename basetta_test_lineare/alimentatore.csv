@@ -1,0 +1,62 @@
+Title,
+Revision,
+Date,
+Generated,mar 13 dic 2016 22:25:02 CET
+Company,
+Comment 1,
+Comment 2,
+Comment 3,
+Comment 4,
+Total Parts,97
+Total Unique Parts,41
+
+
+
+Ref,Qty,Value,Footprint,Voltage,
+C1 C6 ,2,CP1_SmallCapacitors_ThroughHole:C_Radial_D14_L31.5_P5, 
+C2 C4 C5 C3 ,4,C_SmallCapacitors_ThroughHole:C_Radial_D5_L11_P2.5, 
+C8 C7 ,2,C_SmallCapacitors_ThroughHole:C_Radial_D7.5_L11.2_P2.5, 
+C11 C10 C16 C17 C9 C15 ,6,470uCapacitors_ThroughHole:C_Radial_D8_L21_P3.8,50V
+C14 C12 C13 ,3,.33uCapacitors_ThroughHole:C_Radial_D7.5_L11.2_P2.5,50V
+D1 D3 D2 D6 D7 D8 D4 D5 D12 D10 D11 D9 ,12,D_SmallDiodes_ThroughHole:Diode_DO-41_SOD81_Vertical_AnodeUp, 
+D13 D14 ,2,Led_SmallLEDs:LED-3MM, 
+D15 ,1,LM4040TO_SOT_Packages_SMD:SOT-23, 
+J2 ,1,TP5Pin_Headers:Pin_Header_Straight_1x01, 
+J1 ,1,TP6Pin_Headers:Pin_Header_Straight_1x01, 
+J3 ,1,TP7Pin_Headers:Pin_Header_Straight_1x01, 
+J4 ,1,TP8Pin_Headers:Pin_Header_Straight_1x01, 
+J5 J6 ,2,HEADER_1Pin_Headers:Pin_Header_Straight_1x01, 
+J7 ,1,TP9Pin_Headers:Pin_Header_Straight_1x01, 
+J8 ,1,TP11Pin_Headers:Pin_Header_Straight_1x01, 
+J9 ,1,TP10Pin_Headers:Pin_Header_Straight_1x01, 
+J10 ,1,TP1Pin_Headers:Pin_Header_Straight_1x01, 
+J11 ,1,TP2Pin_Headers:Pin_Header_Straight_1x01, 
+J12 ,1,TP3Pin_Headers:Pin_Header_Straight_1x01, 
+J13 ,1,TP4Pin_Headers:Pin_Header_Straight_1x01, 
+L1 ,1,L_SmallResistors_ThroughHole:Resistor_Horizontal_RM20mm, 
+P1 ,1,LOAD_POWER_01X02Pin_Headers:Pin_Header_Angled_1x02, 
+P2 ,1,CONN_01X03Pin_Headers:Pin_Header_Angled_1x03, 
+P4 ,1,ICSP_01X06Pin_Headers:Pin_Header_Angled_1x06, 
+P3 ,1,UART_01X03Pin_Headers:Pin_Header_Angled_1x03, 
+P5 ,1,CONN_02X02Pin_Headers:Pin_Header_Straight_2x02, 
+P6 ,1,LOGIC_POWER_01X03Pin_Headers:Pin_Header_Angled_1x03, 
+Q1 ,1,Q_NMOS_DGSTO_SOT_Packages_THT:TO-220_Neutral123_Horizontal, 
+Q2 ,1,Q_PNP_BCETO_SOT_Packages_THT:TO-92_Molded_Narrow, 
+R1 R2 R3 R4 R5 R6 R9 R13 R15 R12 R14 R7 R16 R17 R18 R19 R27 R26 R8 R10 R11 R23 R20 R22 R25 R21 R24 R33 ,28,RResistors_ThroughHole:Resistor_Horizontal_RM10mm, 
+R29 R28 ,2,R_SmallResistors_ThroughHole:Resistor_Horizontal_RM10mm, 
+R32 ,1,10KResistors_ThroughHole:Resistor_Horizontal_RM10mm, 
+R30 R31 ,2,390Resistors_ThroughHole:Resistor_Horizontal_RM10mm, 
+SW1 ,1,SW_PUSH_SMALLButtons_Switches_SMD:SW_SPST_FSMSM, 
+U1 U2 ,2,LM741Housings_DIP:DIP-8_W7.62mm_LongPads, 
+U3 ,1,TL082Housings_DIP:DIP-8_W7.62mm_LongPads, 
+U4 ,1,PIC16F18323Housings_DIP:DIP-14_W7.62mm_LongPads, 
+U5 U6 ,2,MCP4726TO_SOT_Packages_SMD:SOT-23-6, 
+U9 ,1,LM7912CTPower_Integrations:TO-220, 
+U8 ,1,LM7812CTPower_Integrations:TO-220, 
+U7 ,1,LM7805CTPower_Integrations:TO-220, 
+
+
+
+
+BOM made with KICAD_BOM_WIZARD (https://github.com/HashDefineElectronics/KiCad_BOM_Wizard.git)
+Generated mar 13 dic 2016 22:25:02 CET

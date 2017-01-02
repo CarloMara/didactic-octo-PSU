@@ -1,0 +1,396 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:w_connectors
+LIBS:microchip_pic16mcu
+LIBS:MCP4726
+LIBS:PIC16F18323
+LIBS:alimentatore-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 2
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L CONN_01X03 P6
+U 1 1 584EB73C
+P 2275 3800
+F 0 "P6" H 2275 4000 50  0000 C CNN
+F 1 "LOGIC_POWER_01X03" V 2375 3800 50  0000 C CNN
+F 2 "w_conn_screw:mors_3p" H 2275 3800 50  0001 C CNN
+F 3 "" H 2275 3800 50  0000 C CNN
+	1    2275 3800
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3175 3700 2475 3700
+Wire Wire Line
+	2475 3900 3175 3900
+Wire Wire Line
+	3175 4700 3950 4700
+Wire Wire Line
+	3175 2900 3950 2900
+$Comp
+L LM7912CT U9
+U 1 1 584EB856
+P 4350 4650
+F 0 "U9" H 4150 4450 50  0000 C CNN
+F 1 "LM7912CT" H 4350 4450 50  0000 L CNN
+F 2 "Power_Integrations:TO-220" H 4350 4550 50  0000 C CIN
+F 3 "" H 4350 4650 50  0000 C CNN
+	1    4350 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2475 3800 5300 3800
+Wire Wire Line
+	4350 3200 4350 4400
+Connection ~ 4350 3800
+$Comp
+L CP C11
+U 1 1 584EB907
+P 3675 4200
+F 0 "C11" H 3700 4300 50  0000 L CNN
+F 1 "470u" H 3700 4100 50  0000 L CNN
+F 2 "Capacitors_ThroughHole:C_Radial_D8_L21_P3.8" H 3713 4050 50  0001 C CNN
+F 3 "" H 3675 4200 50  0000 C CNN
+F 4 "50V" H 3675 4200 60  0001 C CNN "Voltage"
+	1    3675 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3675 4350 3675 4700
+Connection ~ 3675 4700
+Wire Wire Line
+	3675 3450 3675 4050
+Connection ~ 3675 3800
+$Comp
+L LM7812CT U8
+U 1 1 584EBA0F
+P 4350 2950
+F 0 "U8" H 4150 3150 50  0000 C CNN
+F 1 "LM7812CT" H 4350 3150 50  0000 L CNN
+F 2 "Power_Integrations:TO-220" H 4350 3050 50  0000 C CIN
+F 3 "" H 4350 2950 50  0000 C CNN
+	1    4350 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP C10
+U 1 1 584EBAEE
+P 3675 3300
+F 0 "C10" H 3700 3400 50  0000 L CNN
+F 1 "470u" H 3700 3200 50  0000 L CNN
+F 2 "Capacitors_ThroughHole:C_Radial_D8_L21_P3.8" H 3713 3150 50  0001 C CNN
+F 3 "" H 3675 3300 50  0000 C CNN
+F 4 "50V" H 3675 3300 60  0001 C CNN "Voltage"
+	1    3675 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3675 3150 3675 2900
+Connection ~ 3675 2900
+$Comp
+L C_Small C14
+U 1 1 584EBB94
+P 4150 3350
+F 0 "C14" H 4160 3420 50  0000 L CNN
+F 1 ".33u" H 4160 3270 50  0000 L CNN
+F 2 "Capacitors_ThroughHole:C_Disc_D3_P2.5" H 4150 3350 50  0001 C CNN
+F 3 "" H 4150 3350 50  0000 C CNN
+F 4 "50V" H 4150 3350 60  0001 C CNN "Voltage"
+	1    4150 3350
+	0    1    1    0   
+$EndComp
+$Comp
+L C_Small C12
+U 1 1 584EBC92
+P 4125 4125
+F 0 "C12" H 4135 4195 50  0000 L CNN
+F 1 ".33u" H 4135 4045 50  0000 L CNN
+F 2 "Capacitors_ThroughHole:C_Disc_D3_P2.5" H 4125 4125 50  0001 C CNN
+F 3 "" H 4125 4125 50  0000 C CNN
+F 4 "50V" H 4125 4125 60  0001 C CNN "Voltage"
+	1    4125 4125
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4225 4125 4350 4125
+Connection ~ 4350 4125
+Wire Wire Line
+	4025 4125 3925 4125
+Wire Wire Line
+	3925 4125 3925 4700
+Connection ~ 3925 4700
+Wire Wire Line
+	3900 3350 4050 3350
+Wire Wire Line
+	3900 3350 3900 2900
+Connection ~ 3900 2900
+Wire Wire Line
+	4250 3350 4350 3350
+Connection ~ 4350 3350
+$Comp
+L CP C16
+U 1 1 584EBE41
+P 4925 3325
+F 0 "C16" H 4950 3425 50  0000 L CNN
+F 1 "470u" H 4950 3225 50  0000 L CNN
+F 2 "Capacitors_ThroughHole:C_Radial_D8_L21_P3.8" H 4963 3175 50  0001 C CNN
+F 3 "" H 4925 3325 50  0000 C CNN
+F 4 "50V" H 4925 3325 60  0001 C CNN "Voltage"
+	1    4925 3325
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP C17
+U 1 1 584EBEA0
+P 4925 4200
+F 0 "C17" H 4950 4300 50  0000 L CNN
+F 1 "470u" H 4950 4100 50  0000 L CNN
+F 2 "Capacitors_ThroughHole:C_Radial_D8_L21_P3.8" H 4963 4050 50  0001 C CNN
+F 3 "" H 4925 4200 50  0000 C CNN
+F 4 "50V" H 4925 4200 60  0001 C CNN "Voltage"
+	1    4925 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4925 4350 4925 4700
+Connection ~ 4925 4700
+Wire Wire Line
+	4925 3475 4925 4050
+Connection ~ 4925 3800
+Wire Wire Line
+	4925 3175 4925 2900
+Wire Wire Line
+	4750 2900 5300 2900
+Wire Wire Line
+	4750 4700 5300 4700
+Wire Wire Line
+	5300 4700 5300 4675
+Connection ~ 4925 2900
+$Comp
+L -12VA #PWR026
+U 1 1 584EC0EE
+P 5300 4675
+F 0 "#PWR026" H 5300 4525 50  0001 C CNN
+F 1 "-12VA" H 5300 4815 50  0000 C CNN
+F 2 "" H 5300 4675 50  0000 C CNN
+F 3 "" H 5300 4675 50  0000 C CNN
+	1    5300 4675
+	1    0    0    -1  
+$EndComp
+$Comp
+L +12VA #PWR027
+U 1 1 584EC161
+P 5300 2875
+F 0 "#PWR027" H 5300 2725 50  0001 C CNN
+F 1 "+12VA" H 5300 3015 50  0000 C CNN
+F 2 "" H 5300 2875 50  0000 C CNN
+F 3 "" H 5300 2875 50  0000 C CNN
+	1    5300 2875
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5300 2900 5300 2875
+Wire Wire Line
+	5300 3800 5300 3825
+$Comp
+L GND #PWR028
+U 1 1 584EC265
+P 5300 3825
+F 0 "#PWR028" H 5300 3575 50  0001 C CNN
+F 1 "GND" H 5300 3675 50  0000 C CNN
+F 2 "" H 5300 3825 50  0000 C CNN
+F 3 "" H 5300 3825 50  0000 C CNN
+	1    5300 3825
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5675 1225 6450 1225
+Wire Wire Line
+	6850 1525 6850 2025
+Wire Wire Line
+	6175 1775 6175 2025
+$Comp
+L CP C9
+U 1 1 584EC4EB
+P 6175 1625
+F 0 "C9" H 6200 1725 50  0000 L CNN
+F 1 "470u" H 6200 1525 50  0000 L CNN
+F 2 "Capacitors_ThroughHole:C_Radial_D8_L21_P3.8" H 6213 1475 50  0001 C CNN
+F 3 "" H 6175 1625 50  0000 C CNN
+F 4 "50V" H 6175 1625 60  0001 C CNN "Voltage"
+	1    6175 1625
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6175 1475 6175 1225
+Connection ~ 6175 1225
+$Comp
+L C_Small C13
+U 1 1 584EC4F4
+P 6650 1675
+F 0 "C13" H 6660 1745 50  0000 L CNN
+F 1 ".33u" H 6660 1595 50  0000 L CNN
+F 2 "Capacitors_ThroughHole:C_Disc_D3_P2.5" H 6650 1675 50  0001 C CNN
+F 3 "" H 6650 1675 50  0000 C CNN
+F 4 "50V" H 6650 1675 60  0001 C CNN "Voltage"
+	1    6650 1675
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6400 1675 6550 1675
+Wire Wire Line
+	6400 1675 6400 1225
+Connection ~ 6400 1225
+Wire Wire Line
+	6750 1675 6850 1675
+Connection ~ 6850 1675
+$Comp
+L CP C15
+U 1 1 584EC500
+P 7425 1650
+F 0 "C15" H 7450 1750 50  0000 L CNN
+F 1 "470u" H 7450 1550 50  0000 L CNN
+F 2 "Capacitors_ThroughHole:C_Radial_D8_L21_P3.8" H 7463 1500 50  0001 C CNN
+F 3 "" H 7425 1650 50  0000 C CNN
+F 4 "50V" H 7425 1650 60  0001 C CNN "Voltage"
+	1    7425 1650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7425 2025 7425 1800
+Wire Wire Line
+	7425 1500 7425 1225
+Wire Wire Line
+	7250 1225 7800 1225
+Connection ~ 7425 1225
+Wire Wire Line
+	7800 1225 7800 1200
+Wire Wire Line
+	6175 2025 7800 2025
+Wire Wire Line
+	7800 2025 7800 2075
+Connection ~ 6850 2025
+Connection ~ 7425 2025
+$Comp
+L GND #PWR029
+U 1 1 584ECAF0
+P 7800 2075
+F 0 "#PWR029" H 7800 1825 50  0001 C CNN
+F 1 "GND" H 7800 1925 50  0000 C CNN
+F 2 "" H 7800 2075 50  0000 C CNN
+F 3 "" H 7800 2075 50  0000 C CNN
+	1    7800 2075
+	1    0    0    -1  
+$EndComp
+$Comp
+L LM7805CT U7
+U 1 1 584ECCE1
+P 6850 1275
+F 0 "U7" H 6650 1475 50  0000 C CNN
+F 1 "LM7805CT" H 6850 1475 50  0000 L CNN
+F 2 "Power_Integrations:TO-220" H 6850 1375 50  0000 C CIN
+F 3 "" H 6850 1275 50  0000 C CNN
+	1    6850 1275
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR030
+U 1 1 584ECDAF
+P 7800 1200
+F 0 "#PWR030" H 7800 1050 50  0001 C CNN
+F 1 "+5V" H 7800 1340 50  0000 C CNN
+F 2 "" H 7800 1200 50  0000 C CNN
+F 3 "" H 7800 1200 50  0000 C CNN
+	1    7800 1200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3175 3900 3175 4700
+$Comp
+L HEADER_1 J10
+U 1 1 5850C1CB
+P 7425 1125
+F 0 "J10" V 7675 1125 60  0000 C CNN
+F 1 "TP1" V 7575 1125 60  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01" H 7425 1125 60  0001 C CNN
+F 3 "" H 7425 1125 60  0000 C CNN
+	1    7425 1125
+	0    -1   -1   0   
+$EndComp
+$Comp
+L HEADER_1 J11
+U 1 1 5850C32B
+P 4925 2800
+F 0 "J11" V 5175 2800 60  0000 C CNN
+F 1 "TP2" V 5075 2800 60  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01" H 4925 2800 60  0001 C CNN
+F 3 "" H 4925 2800 60  0000 C CNN
+	1    4925 2800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L HEADER_1 J12
+U 1 1 5850C51C
+P 4925 4800
+F 0 "J12" V 5175 4800 60  0000 C CNN
+F 1 "TP3" V 5075 4800 60  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01" H 4925 4800 60  0001 C CNN
+F 3 "" H 4925 4800 60  0000 C CNN
+	1    4925 4800
+	0    1    1    0   
+$EndComp
+$Comp
+L +12VA #PWR031
+U 1 1 58619CB6
+P 5675 1150
+F 0 "#PWR031" H 5675 1000 50  0001 C CNN
+F 1 "+12VA" H 5675 1290 50  0000 C CNN
+F 2 "" H 5675 1150 50  0000 C CNN
+F 3 "" H 5675 1150 50  0000 C CNN
+	1    5675 1150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5675 1150 5675 1225
+Wire Wire Line
+	3175 3700 3175 2900
+$EndSCHEMATC
