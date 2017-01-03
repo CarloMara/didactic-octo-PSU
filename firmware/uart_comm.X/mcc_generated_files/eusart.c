@@ -13,12 +13,12 @@
   @Description
     This header file provides implementations for driver APIs for EUSART.
     Generation Information :
-        Product Revision  :  MPLAB(c) Code Configurator - 3.16
+        Product Revision  :  MPLAB(c) Code Configurator - 4.15
         Device            :  PIC16F18323
         Driver Version    :  2.00
     The generated drivers are tested against the following:
         Compiler          :  XC8 1.35
-        MPLAB             :  MPLAB X 3.20
+        MPLAB             :  MPLAB X 3.40
 */
 
 /*
@@ -65,10 +65,10 @@ void EUSART_Initialize(void)
     // TX9 8-bit; TX9D 0; SENDB sync_break_complete; TXEN enabled; SYNC asynchronous; BRGH hi_speed; CSRC slave; 
     TX1STA = 0x24;
 
-    // Baud Rate = 115200; SP1BRGL 68; 
-    SP1BRGL = 0x44;
+    // Baud Rate = 57600; SP1BRGL 138; 
+    SP1BRGL = 0x8A;
 
-    // Baud Rate = 115200; SP1BRGH 0; 
+    // Baud Rate = 57600; SP1BRGH 0; 
     SP1BRGH = 0x00;
 
 }
@@ -77,7 +77,6 @@ void EUSART_Initialize(void)
 uint8_t EUSART_Read(void)
 {
 
-   RC1STAbits.SREN = 1;
     while(!PIR1bits.RCIF)
     {
     }
@@ -87,8 +86,8 @@ uint8_t EUSART_Read(void)
     {
         // EUSART error - restart
 
-        RC1STAbits.SPEN = 0; 
-        RC1STAbits.SPEN = 1; 
+        RC1STAbits.CREN = 0; 
+        RC1STAbits.CREN = 1; 
     }
 
     return RC1REG;
