@@ -13,12 +13,12 @@
   @Description:
     This header file provides implementations for pin APIs for all pins selected in the GUI.
     Generation Information :
-        Product Revision  :  MPLAB(c) Code Configurator - 3.16
+        Product Revision  :  MPLAB(c) Code Configurator - 4.15
         Device            :  PIC16F18323
         Version           :  1.01
     The generated drivers are tested against the following:
         Compiler          :  XC8 1.35
-        MPLAB             :  MPLAB X 3.20
+        MPLAB             :  MPLAB X 3.40
 
     Copyright (c) 2013 - 2015 released Microchip Technology Inc.  All rights reserved.
 
@@ -60,62 +60,60 @@
 #define PULL_UP_DISABLED     0
 
 // get/set IO_RC1 aliases
-#define IO_RC1_TRIS               TRISC1
-#define IO_RC1_LAT                LATC1
-#define IO_RC1_PORT               RC1
-#define IO_RC1_WPU                WPUC1
-#define IO_RC1_ANS                ANSC1
-#define IO_RC1_SetHigh()    do { LATC1 = 1; } while(0)
-#define IO_RC1_SetLow()   do { LATC1 = 0; } while(0)
-#define IO_RC1_Toggle()   do { LATC1 = ~LATC1; } while(0)
-#define IO_RC1_GetValue()         PORTCbits.RC1
-#define IO_RC1_SetDigitalInput()    do { TRISC1 = 1; } while(0)
-#define IO_RC1_SetDigitalOutput()   do { TRISC1 = 0; } while(0)
+#define IO_RC1_TRIS               TRISCbits.TRISC1
+#define IO_RC1_LAT                LATCbits.LATC1
+#define IO_RC1_PORT               PORTCbits.RC1
+#define IO_RC1_WPU                WPUCbits.WPUC1
+#define IO_RC1_OD                ODCONCbits.ODCC1
+#define IO_RC1_ANS                ANSELCbits.ANSC1
+#define IO_RC1_SetHigh()            do { LATCbits.LATC1 = 1; } while(0)
+#define IO_RC1_SetLow()             do { LATCbits.LATC1 = 0; } while(0)
+#define IO_RC1_Toggle()             do { LATCbits.LATC1 = ~LATCbits.LATC1; } while(0)
+#define IO_RC1_GetValue()           PORTCbits.RC1
+#define IO_RC1_SetDigitalInput()    do { TRISCbits.TRISC1 = 1; } while(0)
+#define IO_RC1_SetDigitalOutput()   do { TRISCbits.TRISC1 = 0; } while(0)
+#define IO_RC1_SetPullup()      do { WPUCbits.WPUC1 = 1; } while(0)
+#define IO_RC1_ResetPullup()    do { WPUCbits.WPUC1 = 0; } while(0)
+#define IO_RC1_SetPushPull()    do { ODCONCbits.ODCC1 = 1; } while(0)
+#define IO_RC1_SetOpenDrain()   do { ODCONCbits.ODCC1 = 0; } while(0)
+#define IO_RC1_SetAnalogMode()  do { ANSELCbits.ANSC1 = 1; } while(0)
+#define IO_RC1_SetDigitalMode() do { ANSELCbits.ANSC1 = 0; } while(0)
 
-#define IO_RC1_SetPullup()    do { WPUC1 = 1; } while(0)
-#define IO_RC1_ResetPullup()   do { WPUC1 = 0; } while(0)
-#define IO_RC1_SetAnalogMode()   do { ANSC1 = 1; } while(0)
-#define IO_RC1_SetDigitalMode()   do { ANSC1 = 0; } while(0)
+// get/set RC4 procedures
+#define RC4_SetHigh()    do { LATCbits.LATC4 = 1; } while(0)
+#define RC4_SetLow()   do { LATCbits.LATC4 = 0; } while(0)
+#define RC4_Toggle()   do { LATCbits.LATC4 = ~LATCbits.LATC4; } while(0)
+#define RC4_GetValue()         PORTCbits.RC4
+#define RC4_SetDigitalInput()   do { TRISCbits.TRISC4 = 1; } while(0)
+#define RC4_SetDigitalOutput()  do { TRISCbits.TRISC4 = 0; } while(0)
+#define RC4_SetPullup()     do { WPUCbits.WPUC4 = 1; } while(0)
+#define RC4_ResetPullup()   do { WPUCbits.WPUC4 = 0; } while(0)
+#define RC4_SetAnalogMode() do { ANSELCbits.ANSC4 = 1; } while(0)
+#define RC4_SetDigitalMode()do { ANSELCbits.ANSC4 = 0; } while(0)
 
+// get/set RC5 procedures
+#define RC5_SetHigh()    do { LATCbits.LATC5 = 1; } while(0)
+#define RC5_SetLow()   do { LATCbits.LATC5 = 0; } while(0)
+#define RC5_Toggle()   do { LATCbits.LATC5 = ~LATCbits.LATC5; } while(0)
+#define RC5_GetValue()         PORTCbits.RC5
+#define RC5_SetDigitalInput()   do { TRISCbits.TRISC5 = 1; } while(0)
+#define RC5_SetDigitalOutput()  do { TRISCbits.TRISC5 = 0; } while(0)
+#define RC5_SetPullup()     do { WPUCbits.WPUC5 = 1; } while(0)
+#define RC5_ResetPullup()   do { WPUCbits.WPUC5 = 0; } while(0)
+#define RC5_SetAnalogMode() do { ANSELCbits.ANSC5 = 1; } while(0)
+#define RC5_SetDigitalMode()do { ANSELCbits.ANSC5 = 0; } while(0)
 
-// get/set IO_RC1 aliases
-#define IO_RC1_TRIS               TRISC1
-#define IO_RC1_LAT                LATC1
-#define IO_RC1_PORT               RC1
-#define IO_RC1_WPU                WPUC1
-#define IO_RC1_ANS                ANSC1
-#define IO_RC1_SetHigh()    do { LATC1 = 1; } while(0)
-#define IO_RC1_SetLow()   do { LATC1 = 0; } while(0)
-#define IO_RC1_Toggle()   do { LATC1 = ~LATC1; } while(0)
-#define IO_RC1_GetValue()         PORTCbits.RC1
-#define IO_RC1_SetDigitalInput()    do { TRISC1 = 1; } while(0)
-#define IO_RC1_SetDigitalOutput()   do { TRISC1 = 0; } while(0)
-
-#define IO_RC1_SetPullup()    do { WPUC1 = 1; } while(0)
-#define IO_RC1_ResetPullup()   do { WPUC1 = 0; } while(0)
-#define IO_RC1_SetAnalogMode()   do { ANSC1 = 1; } while(0)
-#define IO_RC1_SetDigitalMode()   do { ANSC1 = 0; } while(0)
-
-
-// get/set IO_RC1 aliases
-#define IO_RC1_TRIS               TRISC1
-#define IO_RC1_LAT                LATC1
-#define IO_RC1_PORT               RC1
-#define IO_RC1_WPU                WPUC1
-#define IO_RC1_ANS                ANSC1
-#define IO_RC1_SetHigh()    do { LATC1 = 1; } while(0)
-#define IO_RC1_SetLow()   do { LATC1 = 0; } while(0)
-#define IO_RC1_Toggle()   do { LATC1 = ~LATC1; } while(0)
-#define IO_RC1_GetValue()         PORTCbits.RC1
-#define IO_RC1_SetDigitalInput()    do { TRISC1 = 1; } while(0)
-#define IO_RC1_SetDigitalOutput()   do { TRISC1 = 0; } while(0)
-
-#define IO_RC1_SetPullup()    do { WPUC1 = 1; } while(0)
-#define IO_RC1_ResetPullup()   do { WPUC1 = 0; } while(0)
-#define IO_RC1_SetAnalogMode()   do { ANSC1 = 1; } while(0)
-#define IO_RC1_SetDigitalMode()   do { ANSC1 = 0; } while(0)
-
-
+/**
+   @Param
+    none
+   @Returns
+    none
+   @Description
+    GPIO and peripheral I/O initialization
+   @Example
+    PIN_MANAGER_Initialize();
+ */
+void PIN_MANAGER_Initialize (void);
 
 /**
  * @Param
@@ -123,13 +121,11 @@
  * @Returns
     none
  * @Description
-    GPIO and peripheral I/O initialization
+    Interrupt on Change Handling routine
  * @Example
-    PIN_MANAGER_Initialize();
+    PIN_MANAGER_IOC();
  */
-void PIN_MANAGER_Initialize (void);
-
-
+void PIN_MANAGER_IOC(void);
 
 
 

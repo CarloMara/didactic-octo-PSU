@@ -13,12 +13,12 @@
   @Description:
     This header file provides implementations for driver APIs for all modules selected in the GUI.
     Generation Information :
-        Product Revision  :  MPLAB(c) Code Configurator - 3.16
+        Product Revision  :  MPLAB(c) Code Configurator - 4.15
         Device            :  PIC16F18323
         Driver Version    :  1.02
     The generated drivers are tested against the following:
         Compiler          :  XC8 1.35
-        MPLAB             :  MPLAB X 3.20
+        MPLAB             :  MPLAB X 3.40
 */
 
 /*
@@ -47,7 +47,7 @@
 
 // CONFIG1
 #pragma config FEXTOSC = OFF    // FEXTOSC External Oscillator mode Selection bits->Oscillator not enabled
-#pragma config RSTOSC = HFINT32    // Power-up default value for COSC bits->HFINTOSC with 2x PLL (32MHz)
+#pragma config RSTOSC = HFINT1    // Power-up default value for COSC bits->HFINTOSC
 #pragma config CLKOUTEN = OFF    // Clock Out Enable bit->CLKOUT function is disabled; I/O or oscillator function on OSC2
 #pragma config CSWEN = ON    // Clock Switch Enable bit->Writing to NOSC and NDIV is allowed
 #pragma config FCMEN = ON    // Fail-Safe Clock Monitor Enable->Fail-Safe Clock Monitor is enabled
@@ -75,9 +75,10 @@
 
 void SYSTEM_Initialize(void)
 {
-    
+
     PIN_MANAGER_Initialize();
     OSCILLATOR_Initialize();
+    WDT_Initialize();
     EUSART_Initialize();
 }
 
@@ -95,6 +96,12 @@ void OSCILLATOR_Initialize(void)
     OSCTUNE = 0x00;
     // Set the secondary oscillator
     
+}
+
+void WDT_Initialize(void)
+{
+    // WDTPS 1:65536; SWDTEN OFF; 
+    WDTCON = 0x20;
 }
 
 /**
