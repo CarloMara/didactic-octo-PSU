@@ -1,0 +1,73 @@
+Write All Memory
+
+
+	  COMMAND BITS
+        W |||
+ 	| |||    GAIN
+ ADDRESS| |||    |
+[11000000 01100000]
+	     ||||
+	     ||||
+	     ||POWER
+	     ||DOWN
+	     ||
+	   VOLTAGE
+	   REFERENCE
+	   SELECTION
+
+COMMAND SELECTION
+
+011 Write All Memeory
+
+VOLTAGE REFERENCE SELECTION
+
+0x Vcc
+10 Vref-Unbuffered
+11 Vref-Buffered
+
+POWER DOWN SELECTION
+
+00  Not Powered Down (Normal operation)
+01  Powered Down – V OUT is loaded with 1 kΩ resistor to ground.
+10  Powered Down – V OUT is loaded with 100 kΩ resistor to ground.
+11  Powered Down – V OUT is loaded with 500 kΩ resistor to ground.
+
+GAIN SELECTION
+
+0  1x (gain of 1)
+1  2x (gain of 2). Not applicable when V DD is used as V RL
+
+Write Volatile DAC Register
+This command is typically used for a quick update of the analog output by modifying the minimum parameters.
+
+
+	  COMMAND BITS
+        W || 
+ 	| ||POWER DOWN SELECTION     
+ ADDRESS| ||||     
+[11000000 00100000 00000000]
+	      |		  \-------------------------------\
+	      |						  |			
+	      |						  |
+	      |						  |
+	      |						  |
+	      D11 D10 D09 D08 D07 D06 D05 D04 D03 D02 D01 D00
+
+THIS SHOULD GIVE 5V OUT
+[11000000 00101111 11111111]
+
+
+THIS SHOULD GIVE 2.5V OUT
+[11000000 00100111 11111111]
+
+
+THIS SHOULD GIVE 1.2V OUT
+[11000000 00100011 11111111]
+
+THIS SHOULD GIVE 0V OUT
+[11000000 00100000 00000000]
+
+
+
+
+
