@@ -1,4 +1,5 @@
 EESchema Schematic File Version 2
+LIBS:alimentatore-rescue
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -28,12 +29,11 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
-LIBS:w_connectors
 LIBS:microchip_pic16mcu
 LIBS:MCP4726
 LIBS:PIC16F18323
 LIBS:alimentatore-cache
-EELAYER 25 0
+EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -101,7 +101,7 @@ Wire Wire Line
 	3675 3450 3675 4050
 Connection ~ 3675 3800
 $Comp
-L LM7812CT U8
+L LM7812CT-RESCUE-alimentatore U8
 U 1 1 584EBA0F
 P 4350 2950
 F 0 "U8" H 4150 3150 50  0000 C CNN
@@ -322,9 +322,11 @@ F 3 "" H 7800 2075 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L LM7805CT U7
+L LM7805CT-RESCUE-alimentatore U7
 U 1 1 584ECCE1
 P 6850 1275
+AR Path="/584ECCE1" Ref="U7"  Part="1" 
+AR Path="/584EB66A/584ECCE1" Ref="U7"  Part="1" 
 F 0 "U7" H 6650 1475 50  0000 C CNN
 F 1 "LM7805CT" H 6850 1475 50  0000 L CNN
 F 2 "Power_Integrations:TO-220" H 6850 1375 50  0000 C CIN

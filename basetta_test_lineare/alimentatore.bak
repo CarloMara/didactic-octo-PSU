@@ -1,4 +1,5 @@
 EESchema Schematic File Version 2
+LIBS:alimentatore-rescue
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -28,12 +29,11 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
-LIBS:w_connectors
 LIBS:microchip_pic16mcu
 LIBS:MCP4726
 LIBS:PIC16F18323
 LIBS:alimentatore-cache
-EELAYER 25 0
+EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -617,17 +617,17 @@ Text Notes 2100 3100 0    60   Italic 12
 Series Pass Transistor
 Text Notes 7850 2825 0    60   Italic 12
 Meter Input Circuit\n
-Text Label 5850 6425 2    60   ~ 0
+Text Label 5850 7000 2    60   ~ 0
 CURRENT_LIMIT
-Text Label 5850 6525 2    60   ~ 0
+Text Label 5850 7200 2    60   ~ 0
 VOLTAGE_LIMIT
 Text Label 9300 3150 0    60   ~ 0
 VOLTAGE_MES
-Text Label 5850 6625 2    60   ~ 0
+Text Label 5850 6600 2    60   ~ 0
 VOLTAGE_MES
 Text Label 9300 2900 0    60   ~ 0
 CURREN_MES
-Text Label 5850 6725 2    60   ~ 0
+Text Label 5850 6700 2    60   ~ 0
 CURREN_MES
 $Comp
 L CONN_01X03 P2
@@ -837,9 +837,9 @@ F 3 "" H 9400 1025 50  0000 C CNN
 	1    9400 1025
 	1    0    0    -1  
 $EndComp
-Text Label 2850 6475 0    60   ~ 0
-CC_INDICATOR
 Text Label 2850 6575 0    60   ~ 0
+CC_INDICATOR
+Text Label 2850 6475 0    60   ~ 0
 CV_INDICATOR
 $Comp
 L Q_PNP_EBC Q2
@@ -910,7 +910,7 @@ $EndComp
 Text Label 9850 2100 0    60   ~ 0
 CV_INDICATOR
 $Comp
-L POT RV3
+L POT-RESCUE-alimentatore RV3
 U 1 1 585BD5A0
 P 6200 5000
 F 0 "RV3" H 6200 4920 50  0000 C CNN
@@ -967,7 +967,7 @@ F 3 "" H 1150 1400 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L POT RV1
+L POT-RESCUE-alimentatore RV1
 U 1 1 5861235A
 P 1150 1650
 F 0 "RV1" H 1150 1570 50  0000 C CNN
@@ -1000,7 +1000,7 @@ F 3 "" H 2350 1375 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L POT RV2
+L POT-RESCUE-alimentatore RV2
 U 1 1 58613842
 P 2250 2000
 F 0 "RV2" H 2250 1920 50  0000 C CNN
@@ -1066,17 +1066,6 @@ F 2 "Pin_Headers:Pin_Header_Straight_1x04" H 2650 6625 50  0001 C CNN
 F 3 "" H 2650 6625 50  0000 C CNN
 	1    2650 6625
 	-1   0    0    1   
-$EndComp
-$Comp
-L CONN_01X04 P5
-U 1 1 586175B2
-P 6050 6575
-F 0 "P5" H 6050 6825 50  0000 C CNN
-F 1 "CONN_01X04" V 6150 6575 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x04" H 6050 6575 50  0001 C CNN
-F 3 "" H 6050 6575 50  0000 C CNN
-	1    6050 6575
-	1    0    0    -1  
 $EndComp
 $Comp
 L +5V #PWR024
@@ -1505,4 +1494,37 @@ Wire Wire Line
 	2850 6775 3750 6775
 Wire Wire Line
 	3750 6775 3750 6925
+$Comp
+L CONN_01X01 P8
+U 1 1 58700E3F
+P 6050 7000
+F 0 "P8" H 6128 7041 50  0000 L CNN
+F 1 "CONN_01X01" H 6128 6950 50  0000 L CNN
+F 2 "" H 6050 7000 50  0000 C CNN
+F 3 "" H 6050 7000 50  0000 C CNN
+	1    6050 7000
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X01 P9
+U 1 1 58700F0D
+P 6050 7200
+F 0 "P9" H 6128 7241 50  0000 L CNN
+F 1 "CONN_01X01" H 6128 7150 50  0000 L CNN
+F 2 "" H 6050 7200 50  0000 C CNN
+F 3 "" H 6050 7200 50  0000 C CNN
+	1    6050 7200
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X02 P5
+U 1 1 58701217
+P 6050 6650
+F 0 "P5" H 6128 6691 50  0000 L CNN
+F 1 "CONN_01X02" H 6128 6600 50  0000 L CNN
+F 2 "" H 6050 6650 50  0000 C CNN
+F 3 "" H 6050 6650 50  0000 C CNN
+	1    6050 6650
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
