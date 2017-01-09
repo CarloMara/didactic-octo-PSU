@@ -17,13 +17,15 @@ void main(void) {
     
     static uint16_t address = (0xC0 / 2);	
     static uint8_t length = 1;
-    static uint8_t command[3] = {0b01110000,0b00110011,0b00110000};
+    static uint8_t command[3] = {0b01110000,0b11001100,0b11000000};
     
     static I2C1_MESSAGE_STATUS I2C_Wflag, I2C_Rflag;
 
     //[0b11000000,0b01110000,0b11001100,0b11000000]
     //[0b11000000,0b01110000,0b01100110,0b01100000]
     //[0b11000000,0b01110000,0b00110011,0b00110000]
+    //[0b11000000,0b01110000,0b01110000,0b00000000]
+    //[0b11000000,0b01110000,0b01001100,0b11000000]
 
 
 
@@ -38,6 +40,7 @@ void main(void) {
         
         if (I2C_Wflag == I2C1_MESSAGE_FAIL){
               
+            
         } 
         
         while (I2C_Wflag != I2C1_MESSAGE_COMPLETE);

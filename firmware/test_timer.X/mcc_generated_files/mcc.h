@@ -50,12 +50,9 @@
 #include <stdint.h>
 #include <stdbool.h>
 #include "interrupt_manager.h"
-#include "adc.h"
 #include "tmr0.h"
-#include "i2c1.h"
-#include "eusart.h"
 
-#define _XTAL_FREQ  16000000
+#define _XTAL_FREQ  4000000
 
 
 /**

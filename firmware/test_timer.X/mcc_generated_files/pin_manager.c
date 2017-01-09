@@ -59,13 +59,13 @@ void PIN_MANAGER_Initialize(void)
     /**
     TRISx registers
     */    
-    TRISA = 0x36;
-    TRISC = 0x2F;
+    TRISA = 0x37;
+    TRISC = 0x3B;
 
     /**
     ANSELx registers
     */   
-    ANSELC = 0x1C;
+    ANSELC = 0x3F;
     ANSELA = 0x37;
 
     /**
@@ -84,25 +84,6 @@ void PIN_MANAGER_Initialize(void)
 
    
     
-    
-    bool state = GIE;
-    GIE = 0;
-    PPSLOCK = 0x55;
-    PPSLOCK = 0xAA;
-    PPSLOCKbits.PPSLOCKED = 0x00; // unlock PPS
-
-    RC1PPSbits.RC1PPS = 0x19;   //RC1->MSSP1:SDA1;
-    SSP1CLKPPSbits.SSP1CLKPPS = 0x10;   //RC0->MSSP1:SCL1;
-    SSP1DATPPSbits.SSP1DATPPS = 0x11;   //RC1->MSSP1:SDA1;
-    RXPPSbits.RXPPS = 0x15;   //RC5->EUSART:RX;
-    RC4PPSbits.RC4PPS = 0x14;   //RC4->EUSART:TX;
-    RC0PPSbits.RC0PPS = 0x18;   //RC0->MSSP1:SCL1;
-
-    PPSLOCK = 0x55;
-    PPSLOCK = 0xAA;
-    PPSLOCKbits.PPSLOCKED = 0x01; // lock PPS
-
-    GIE = state;
 }       
 
 void PIN_MANAGER_IOC(void)

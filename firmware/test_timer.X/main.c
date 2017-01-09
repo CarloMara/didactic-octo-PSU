@@ -47,70 +47,16 @@
 
 /*
                          Main application
- *
  */
-uint16_t tick_count = 0;
-uint8_t serial_write_buffer[5];
-//uint8_t serial_read_buffer[5]; non serve un buffer di lettura, credo....
-uint8_t serial_read_index = 0;
-bool got_command = 0;
-
-void Update_Mesuraments(){
-    uint16_t convertedValue;
-    
-    serial_write_buffer[0]='H';
-            
-    ADC_StartConversion(channel_ANC2);
-    while(!ADC_IsConversionDone());
-    convertedValue = ADC_GetConversionResult();
-    
-    serial_write_buffer[1] = convertedValue >>8;
-    serial_write_buffer[2] = convertedValue;
-    
-    ADC_StartConversion(channel_ANC3);
-    while(!ADC_IsConversionDone());
-    convertedValue = ADC_GetConversionResult();
-    
-    serial_write_buffer[3] = convertedValue >>8;
-    serial_write_buffer[4] = convertedValue;
-    
-    for(int index = 0; index<5; index++){
-        EUSART_Write(serial_write_buffer[index]);
-    }
-    TMR0_StartTimer();
-}
 
 void TMR0_CUSTOM_ISR(){
-    TMR0_StopTimer();
-    
-    tick_count++;
-    
-    if(tick_count % 5 == 0 && !got_command){
-        
-        uint8_t serial_read = EUSART_Read();
-        
-        switch (serial_read){
-            case 'K':
-                got_command = 1;
-                Update_Mesuraments();
-                break;  
-            case 'L':
-                got_command = 1;
-                //Get_New_Values();
-        }
-    }
-    
-    if (tick_count == 255){
-        tick_count = 0;
-    }
-        
-    
-    
+    IO_RC2_Toggle();
 }
+
 void main(void)
 {
     // initialize the device
-    SYSTEM_Initialize();
+SYSTEM_Initialize();
 
     // When using interrupts, you need to set the Global and Peripheral Interrupt Enable bits
     // Use the following macros to:
@@ -119,18 +65,28 @@ void main(void)
     INTERRUPT_GlobalInterruptEnable();
 
     // Enable the Peripheral Interrupts
-    INTERRUPT_PeripheralInterruptEnable();
+   INTERRUPT_PeripheralInterruptEnable();
 
     // Disable the Global Interrupts
     //INTERRUPT_GlobalInterruptDisable();
 
     // Disable the Peripheral Interrupts
     //INTERRUPT_PeripheralInterruptDisable();
-    void *functionPtr = &TMR0_CUSTOM_ISR;
     
-    TMR0_SetInterruptHandler(functionPtr);
+    
+    
+    TMR0_SetInterruptHandler(&TMR0_CUSTOM_ISR);
+    
+    
+    
 
     while (1)
     {
+       
+        
+       
     }
 }
+/**
+ End of File
+*/
