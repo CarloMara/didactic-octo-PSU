@@ -1,4 +1,4 @@
-update=ven 06 gen 2017 13:11:11 CET
+update=12/01/2017 11:56:38
 version=1
 last_client=kicad
 [pcbnew]
@@ -33,8 +33,6 @@ NetFmtName=Pcbnew
 SpiceForceRefPrefix=0
 SpiceUseNetNumbers=0
 LabSize=60
-[general]
-version=1
 [eeschema]
 version=1
 LibDir=../../../../kicad_sources/smisioto_libs/library
@@ -73,3 +71,5 @@ LibName31=/home/carlo/kicad_sources/smisioto_libs/library/lib_w_connectors/w_con
 LibName32=microchip_pic16mcu
 LibName33=librerie_schematico/MCP4726
 LibName34=librerie_schematico/PIC16F18323
+[general]
+version=1
