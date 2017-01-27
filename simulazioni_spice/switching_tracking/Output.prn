@@ -1,0 +1,132 @@
+%!PS-Adobe-3.0
+%cupsJobTicket: media=Letter
+%%Creator: Wine PostScript Driver
+%%Title: Switching_Follower_pass.asc
+%%BoundingBox: 12 12 599 779
+%%Pages: (atend)
+%%Orientation: Portrait
+%%EndComments
+%%BeginProlog
+/tmpmtrx matrix def
+/hatch {
+  pathbbox
+  /b exch def /r exch def /t exch def /l exch def /gap 32 def
+  l cvi gap idiv gap mul
+  gap
+  r cvi gap idiv gap mul
+  {t moveto 0 b t sub rlineto}
+  for
+} bind def
+/B {pop pop pop pop} def
+/N {newpath} def
+/havetype42gdir {version cvi 2015 ge} bind def
+%%EndProlog
+%%BeginSetup
+mark {
+%%BeginFeature: *PageSize Letter
+<</PageSize [612 792] /ImagingBBox null>> setpagedevice
+%%EndFeature
+} stopped cleartomark
+%%EndSetup
+%%Page: 1 1
+%%BeginPageSetup
+/pgsave save def
+72 600 div 72 600 div scale
+104 6495 translate
+1 -1 scale
+0 rotate
+%%EndPageSetup
+0.00 0.00 0.50 setrgbcolor
+2 setlinewidth 1 setlinejoin 1 setlinecap
+[] 0 setdash
+1171 2745 moveto
+1188 2745 lineto
+stroke
+gsave
+1188 2745 moveto
+0 0 rlineto
+0 0 rlineto
+0 0 rlineto
+closepath
+0.00 0.00 0.50 setrgbcolor
+fill
+grestore
+0.00 0.00 0.50 setrgbcolor
+1155 2778 moveto
+1171 2745 lineto
+stroke
+gsave
+1171 2745 moveto
+0 0 rlineto
+0 0 rlineto
+0 0 rlineto
+closepath
+0.00 0.00 0.50 setrgbcolor
+fill
+grestore
+0.00 0.00 0.50 setrgbcolor
+1122 2712 moveto
+1155 2778 lineto
+stroke
+gsave
+1155 2778 moveto
+0 0 rlineto
+0 0 rlineto
+0 0 rlineto
+closepath
+0.00 0.00 0.50 setrgbcolor
+fill
+grestore
+0.00 0.00 0.50 setrgbcolor
+1090 2778 moveto
+1122 2712 lineto
+stroke
+gsave
+1122 2712 moveto
+0 0 rlineto
+0 0 rlineto
+0 0 rlineto
+closepath
+0.00 0.00 0.50 setrgbcolor
+fill
+grestore
+0.00 0.00 0.50 setrgbcolor
+1057 2712 moveto
+1090 2778 lineto
+stroke
+gsave
+1090 2778 moveto
+0 0 rlineto
+0 0 rlineto
+0 0 rlineto
+closepath
+0.00 0.00 0.50 setrgbcolor
+fill
+grestore
+0.00 0.00 0.50 setrgbcolor
+1024 2745 moveto
+1041 2745 lineto
+stroke
+gsave
+1041 2745 moveto
+0 0 rlineto
+0 0 rlineto
+0 0 rlineto
+closepath
+0.00 0.00 0.50 setrgbcolor
+fill
+grestore
+0.00 0.00 0.50 setrgbcolor
+1041 2745 moveto
+1057 2712 lineto
+stroke
+gsave
+1057 2712 moveto
+0 0 rlineto
+0 0 rlineto
+0 0 rlineto
+closepath
+0.00 0.00 0.50 setrgbcolor
+fill
+grestore
+0.00 0.00 0.00 setrgbcolor

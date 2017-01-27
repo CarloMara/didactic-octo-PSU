@@ -29,11 +29,12 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
+LIBS:w_connectors
 LIBS:microchip_pic16mcu
 LIBS:MCP4726
 LIBS:PIC16F18323
 LIBS:alimentatore-cache
-EELAYER 25 0
+EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
