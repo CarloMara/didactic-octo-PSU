@@ -1,4 +1,4 @@
-update=16/02/2017 19:27:05
+update=20/02/2017 18:01:18
 version=1
 last_client=kicad
 [pcbnew]
@@ -56,6 +56,6 @@ LibName26=opto
 LibName27=atmel
 LibName28=contrib
 LibName29=valves
-LibName30=LM5175
+LibName30=Library/LM5175
 [general]
 version=1
