@@ -627,6 +627,32 @@ F 3 "" H 2525 1875 50  0000 C CNN
 	1    2525 1875
 	0    1    1    0   
 $EndComp
+$Comp
+L CONN_02X02 P1
+U 1 1 58AFD656
+P 6650 5650
+F 0 "P1" H 6650 5800 50  0000 C CNN
+F 1 "CONN_02X02" H 6650 5500 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_2x02" H 6650 4450 50  0001 C CNN
+F 3 "" H 6650 4450 50  0000 C CNN
+	1    6650 5650
+	1    0    0    -1  
+$EndComp
+Text Label 6900 5700 0    60   ~ 0
+ISNS+_1
+Text Label 6900 5600 0    60   ~ 0
+ISNS-_1
+$Comp
+L Earth #PWR08
+U 1 1 58B550B0
+P 4250 5725
+F 0 "#PWR08" H 4250 5475 50  0001 C CNN
+F 1 "Earth" H 4250 5575 50  0001 C CNN
+F 2 "" H 4250 5725 50  0000 C CNN
+F 3 "" H 4250 5725 50  0000 C CNN
+	1    4250 5725
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
 	3175 2900 3175 2825
 Wire Wire Line
@@ -874,17 +900,15 @@ Wire Wire Line
 	4150 5225 4050 5225
 Connection ~ 4050 5225
 Wire Wire Line
-	4425 5525 4425 5600
+	4425 5525 4425 5675
 Wire Wire Line
 	4425 5600 4475 5600
 Wire Wire Line
-	4050 5525 4050 5600
+	4050 5525 4050 5675
 Wire Wire Line
 	4050 5600 4100 5600
 Wire Wire Line
 	4575 4800 3675 4800
-Wire Wire Line
-	3675 4800 3675 5200
 Wire Wire Line
 	3550 4700 4575 4700
 Wire Wire Line
@@ -961,25 +985,6 @@ Wire Wire Line
 Connection ~ 2750 1875
 Wire Wire Line
 	2325 1875 2325 1500
-$Comp
-L CONN_02X02 P1
-U 1 1 58AFD656
-P 6650 5650
-F 0 "P1" H 6650 5800 50  0000 C CNN
-F 1 "CONN_02X02" H 6650 5500 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_2x02" H 6650 4450 50  0001 C CNN
-F 3 "" H 6650 4450 50  0000 C CNN
-	1    6650 5650
-	1    0    0    -1  
-$EndComp
-Text Label 6900 5700 0    60   ~ 0
-ISNS+_1
-Text Label 6900 5600 0    60   ~ 0
-ISNS-_1
-Wire Wire Line
-	6400 5600 6300 5600
-Wire Wire Line
-	6300 5600 6300 5300
 Wire Wire Line
 	6300 5300 6075 5300
 Wire Wire Line
@@ -988,4 +993,15 @@ Wire Wire Line
 	6225 5400 6225 5700
 Wire Wire Line
 	6225 5700 6400 5700
+Connection ~ 4425 5600
+Wire Wire Line
+	4050 5675 4425 5675
+Connection ~ 4050 5600
+Wire Wire Line
+	4250 5725 4250 5675
+Connection ~ 4250 5675
+Wire Wire Line
+	6300 5600 6300 5300
+Wire Wire Line
+	6400 5600 6300 5600
 $EndSCHEMATC
