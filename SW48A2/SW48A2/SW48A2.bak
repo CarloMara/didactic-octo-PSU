@@ -342,13 +342,13 @@ F 3 "" H 1375 2475 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Text Label 3775 1900 0    60   ~ 0
-HDRV1_1
+HDRV1
 Text Label 3775 2650 0    60   ~ 0
-LDRV1_1
+LDRV1
 Text Label 5550 2575 0    60   ~ 0
-LDRV2_1
+LDRV2
 Text Label 5550 1875 0    60   ~ 0
-HDRV2_1
+HDRV2
 Text Label 2325 1500 0    60   ~ 0
 ISNS+_1
 Text Label 2750 1325 0    60   ~ 0
@@ -380,11 +380,11 @@ F 3 "" H 7225 5100 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Text Label 6325 4900 0    60   ~ 0
-HDRV2_2
+HDRV2
 Text Label 6300 5200 0    60   ~ 0
-LDRV2_2
+LDRV2
 Text Label 7525 5225 0    60   ~ 0
-SW_2
+SW2
 $Comp
 L ZENERsmall D4
 U 1 1 58A3F309
@@ -463,11 +463,11 @@ F 3 "" H 6950 4275 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Text Label 6325 4300 0    60   ~ 0
-HDRV1_2
+HDRV1
 Text Label 6325 4600 0    60   ~ 0
-LDRV1_2
+LDRV1
 Text Label 7175 4600 0    60   ~ 0
-SW1_2
+SW1
 $Comp
 L C_Small C8
 U 1 1 58A47DC6
@@ -524,9 +524,9 @@ F 3 "" H 3250 5275 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Text Label 4475 5600 0    60   ~ 0
-CSG_2
+CSG_1
 Text Label 4100 5600 0    60   ~ 0
-RCS_2
+RCS_1
 $Comp
 L R_Small R4
 U 1 1 58A4D753
@@ -627,6 +627,21 @@ F 3 "" H 2525 1875 50  0000 C CNN
 	1    2525 1875
 	0    1    1    0   
 $EndComp
+$Comp
+L CONN_02X02 P1
+U 1 1 58AFD656
+P 6650 5650
+F 0 "P1" H 6650 5800 50  0000 C CNN
+F 1 "CONN_02X02" H 6650 5500 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_2x02" H 6650 4450 50  0001 C CNN
+F 3 "" H 6650 4450 50  0000 C CNN
+	1    6650 5650
+	1    0    0    -1  
+$EndComp
+Text Label 6900 5700 0    60   ~ 0
+ISNS+_1
+Text Label 6900 5600 0    60   ~ 0
+ISNS-_1
 Wire Wire Line
 	3175 2900 3175 2825
 Wire Wire Line
@@ -659,7 +674,7 @@ Wire Wire Line
 Wire Wire Line
 	4975 2400 4975 2250
 Wire Wire Line
-	4325 2250 5425 2250
+	4075 2250 5425 2250
 Connection ~ 4325 2250
 Connection ~ 4975 2250
 Wire Wire Line
@@ -688,8 +703,6 @@ Wire Wire Line
 Wire Wire Line
 	6850 1550 6850 1800
 Wire Wire Line
-	6850 2000 6850 2300
-Wire Wire Line
 	7375 1550 7375 1650
 Connection ~ 6850 1550
 Wire Wire Line
@@ -697,22 +710,16 @@ Wire Wire Line
 Wire Wire Line
 	7375 2250 7375 2300
 Wire Wire Line
-	6850 2300 8750 2300
-Connection ~ 6850 2250
-Wire Wire Line
 	7825 1550 7825 1850
 Connection ~ 7375 1550
 Wire Wire Line
 	7825 2300 7825 2050
-Connection ~ 7375 2300
 Wire Wire Line
 	8100 2300 8100 2050
 Connection ~ 7825 2300
 Wire Wire Line
 	8325 2300 8325 2050
 Connection ~ 8100 2300
-Wire Wire Line
-	8550 2050 8550 2475
 Connection ~ 8325 2300
 Wire Wire Line
 	8100 1550 8100 1850
@@ -734,7 +741,6 @@ Wire Wire Line
 	8875 2050 8750 2050
 Wire Wire Line
 	8750 2050 8750 2300
-Connection ~ 8550 2300
 Wire Wire Line
 	1375 2475 1375 2325
 Wire Wire Line
@@ -756,12 +762,6 @@ Connection ~ 2850 1875
 Wire Wire Line
 	2200 2375 2400 2375
 Connection ~ 2200 2375
-Wire Wire Line
-	8475 1500 8475 3650
-Connection ~ 8475 1550
-Wire Wire Line
-	8200 1425 8200 1550
-Connection ~ 8200 1550
 Wire Wire Line
 	4975 3050 5125 3050
 Connection ~ 4975 3050
@@ -874,11 +874,7 @@ Wire Wire Line
 	4150 5225 4050 5225
 Connection ~ 4050 5225
 Wire Wire Line
-	4425 5525 4425 5675
-Wire Wire Line
 	4425 5600 4475 5600
-Wire Wire Line
-	4050 5525 4050 5675
 Wire Wire Line
 	4050 5600 4100 5600
 Wire Wire Line
@@ -959,61 +955,41 @@ Wire Wire Line
 Connection ~ 2750 1875
 Wire Wire Line
 	2325 1875 2325 1500
-$Comp
-L CONN_02X02 P1
-U 1 1 58AFD656
-P 6650 5650
-F 0 "P1" H 6650 5800 50  0000 C CNN
-F 1 "CONN_02X02" H 6650 5500 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_2x02" H 6650 4450 50  0001 C CNN
-F 3 "" H 6650 4450 50  0000 C CNN
-	1    6650 5650
-	0    1    1    0   
-$EndComp
-Text Label 6900 5700 0    60   ~ 0
-ISNS+_1
-Text Label 6900 5600 0    60   ~ 0
-ISNS-_1
 Wire Wire Line
-	6075 5300 6600 5300
+	6300 5300 6075 5300
 Wire Wire Line
 	6075 5400 6225 5400
 Wire Wire Line
-	6225 5400 6225 6000
-Connection ~ 4425 5600
+	6225 5400 6225 5700
 Wire Wire Line
-	4050 5675 4425 5675
-Connection ~ 4050 5600
-$Comp
-L Earth #PWR08
-U 1 1 58B550B0
-P 4250 5725
-F 0 "#PWR08" H 4250 5475 50  0001 C CNN
-F 1 "Earth" H 4250 5575 50  0001 C CNN
-F 2 "" H 4250 5725 50  0000 C CNN
-F 3 "" H 4250 5725 50  0000 C CNN
-	1    4250 5725
-	1    0    0    -1  
-$EndComp
+	6225 5700 6400 5700
 Wire Wire Line
-	4250 5725 4250 5675
-Connection ~ 4250 5675
+	6300 5600 6300 5300
 Wire Wire Line
-	6600 5300 6600 5400
+	6400 5600 6300 5600
 Wire Wire Line
-	6225 6000 6600 6000
+	6850 2000 6850 2350
 Wire Wire Line
-	6600 6000 6600 5900
+	8550 2475 8550 2050
 Wire Wire Line
-	6700 5900 6700 6000
+	8750 2300 7375 2300
+Connection ~ 8550 2300
 Wire Wire Line
-	6700 6000 6900 6000
+	6850 2350 6900 2350
+Connection ~ 6850 2250
+Text Label 6900 2350 0    60   ~ 0
+SW2
 Wire Wire Line
-	6900 6000 6900 5700
+	4075 2250 4075 2200
+Text Label 4075 2200 0    60   ~ 0
+SW1
 Wire Wire Line
-	6700 5400 6700 5300
+	4425 5600 4425 5525
 Wire Wire Line
-	6700 5300 6900 5300
+	4050 5600 4050 5525
 Wire Wire Line
-	6900 5300 6900 5600
+	8475 3650 8475 1550
+Connection ~ 8475 1550
+Wire Wire Line
+	3675 4800 3675 5200
 $EndSCHEMATC
