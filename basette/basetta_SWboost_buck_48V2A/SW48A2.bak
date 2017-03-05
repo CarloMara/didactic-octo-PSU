@@ -30,7 +30,7 @@ LIBS:contrib
 LIBS:valves
 LIBS:LM5175
 LIBS:SW48A2-cache
-EELAYER 25 0
+EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -171,7 +171,7 @@ U 1 1 58A1B152
 P 6000 1875
 F 0 "Q3" H 6200 1925 50  0000 L CNN
 F 1 "CSD19534Q5A" H 6200 1825 50  0000 L CNN
-F 2 "NexFET:SON65P300X300X100-9N" H 6200 1975 50  0001 C CNN
+F 2 "NexFET:CSD19534Q5A" H 6200 1975 50  0001 C CNN
 F 3 "" H 6000 1875 50  0000 C CNN
 	1    6000 1875
 	1    0    0    -1  
@@ -182,7 +182,7 @@ U 1 1 58A1B1B4
 P 6000 2575
 F 0 "Q4" H 6200 2625 50  0000 L CNN
 F 1 "CSD18531Q5A" H 6200 2525 50  0000 L CNN
-F 2 "NexFET:SON65P300X300X100-9N" H 6200 2675 50  0001 C CNN
+F 2 "NexFET:CSD19534Q5A" H 6200 2675 50  0001 C CNN
 F 3 "" H 6000 2575 50  0000 C CNN
 	1    6000 2575
 	1    0    0    -1  
@@ -381,7 +381,7 @@ F 3 "" H 7225 5100 50  0000 C CNN
 $EndComp
 Text Label 6325 4900 0    60   ~ 0
 HDRV2
-Text Label 6300 5200 0    60   ~ 0
+Text Label 6325 5200 0    60   ~ 0
 LDRV2
 Text Label 7525 5225 0    60   ~ 0
 SW2
@@ -672,13 +672,11 @@ Wire Wire Line
 Wire Wire Line
 	4325 2100 4325 2450
 Wire Wire Line
-	4975 2400 4975 2250
-Wire Wire Line
-	4075 2250 5425 2250
+	4975 2250 4975 2400
 Connection ~ 4325 2250
 Connection ~ 4975 2250
 Wire Wire Line
-	4325 2875 4325 2975
+	4325 2850 4325 2975
 Wire Wire Line
 	4325 2975 6100 2975
 Wire Wire Line
@@ -782,7 +780,7 @@ Wire Wire Line
 	5875 5875 5875 5925
 Connection ~ 5875 5875
 Wire Wire Line
-	6075 5200 6300 5200
+	6075 5200 6325 5200
 Wire Wire Line
 	6075 5100 7075 5100
 Wire Wire Line
@@ -970,7 +968,7 @@ Wire Wire Line
 Wire Wire Line
 	6850 2000 6850 2350
 Wire Wire Line
-	8550 2475 8550 2050
+	8550 2050 8550 2475
 Wire Wire Line
 	8750 2300 7375 2300
 Connection ~ 8550 2300
@@ -979,9 +977,7 @@ Wire Wire Line
 Connection ~ 6850 2250
 Text Label 6900 2350 0    60   ~ 0
 SW2
-Wire Wire Line
-	4075 2250 4075 2200
-Text Label 4075 2200 0    60   ~ 0
+Text Label 4400 2225 0    60   ~ 0
 SW1
 Wire Wire Line
 	4425 5600 4425 5525
@@ -992,4 +988,107 @@ Wire Wire Line
 Connection ~ 8475 1550
 Wire Wire Line
 	3675 4800 3675 5200
+$Comp
+L TEST_1P W1
+U 1 1 58BA892C
+P 3775 1900
+F 0 "W1" H 3775 2170 50  0000 C CNN
+F 1 "TEST_1P" H 3775 2100 50  0000 C CNN
+F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Big" H 3975 1900 50  0001 C CNN
+F 3 "" H 3975 1900 50  0000 C CNN
+	1    3775 1900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L TEST_1P W2
+U 1 1 58BA9103
+P 3775 2650
+F 0 "W2" H 3775 2920 50  0000 C CNN
+F 1 "TEST_1P" H 3775 2850 50  0000 C CNN
+F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Big" H 3975 2650 50  0001 C CNN
+F 3 "" H 3975 2650 50  0000 C CNN
+	1    3775 2650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L TEST_1P W5
+U 1 1 58BA9900
+P 5550 2575
+F 0 "W5" H 5550 2845 50  0000 C CNN
+F 1 "TEST_1P" H 5550 2775 50  0000 C CNN
+F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Big" H 5750 2575 50  0001 C CNN
+F 3 "" H 5750 2575 50  0000 C CNN
+	1    5550 2575
+	0    -1   -1   0   
+$EndComp
+$Comp
+L TEST_1P W4
+U 1 1 58BA9CA1
+P 5550 1875
+F 0 "W4" H 5550 2145 50  0000 C CNN
+F 1 "TEST_1P" H 5550 2075 50  0000 C CNN
+F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Big" H 5750 1875 50  0001 C CNN
+F 3 "" H 5750 1875 50  0000 C CNN
+	1    5550 1875
+	0    -1   -1   0   
+$EndComp
+$Comp
+L TEST_1P W6
+U 1 1 58BAAA68
+P 6325 4300
+F 0 "W6" H 6325 4570 50  0000 C CNN
+F 1 "TEST_1P" H 6325 4500 50  0000 C CNN
+F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Big" H 6525 4300 50  0001 C CNN
+F 3 "" H 6525 4300 50  0000 C CNN
+	1    6325 4300
+	0    1    1    0   
+$EndComp
+$Comp
+L TEST_1P W7
+U 1 1 58BAAC97
+P 6325 4600
+F 0 "W7" H 6325 4870 50  0000 C CNN
+F 1 "TEST_1P" H 6325 4800 50  0000 C CNN
+F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Big" H 6525 4600 50  0001 C CNN
+F 3 "" H 6525 4600 50  0000 C CNN
+	1    6325 4600
+	0    1    1    0   
+$EndComp
+$Comp
+L TEST_1P W8
+U 1 1 58BAB082
+P 6325 4900
+F 0 "W8" H 6325 5170 50  0000 C CNN
+F 1 "TEST_1P" H 6325 5100 50  0000 C CNN
+F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Big" H 6525 4900 50  0001 C CNN
+F 3 "" H 6525 4900 50  0000 C CNN
+	1    6325 4900
+	0    1    1    0   
+$EndComp
+$Comp
+L TEST_1P W9
+U 1 1 58BAB2FB
+P 6325 5200
+F 0 "W9" H 6325 5470 50  0000 C CNN
+F 1 "TEST_1P" H 6325 5400 50  0000 C CNN
+F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Big" H 6525 5200 50  0001 C CNN
+F 3 "" H 6525 5200 50  0000 C CNN
+	1    6325 5200
+	0    1    1    0   
+$EndComp
+$Comp
+L TEST_1P W10
+U 1 1 58BAF01F
+P 6900 2350
+F 0 "W10" H 6900 2620 50  0000 C CNN
+F 1 "TEST_1P" H 6900 2550 50  0000 C CNN
+F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Big" H 7100 2350 50  0001 C CNN
+F 3 "" H 7100 2350 50  0000 C CNN
+	1    6900 2350
+	0    1    1    0   
+$EndComp
+Text Label 6300 1550 0    60   ~ 0
+VOUT
+Wire Wire Line
+	4325 2250 5425 2250
 $EndSCHEMATC
