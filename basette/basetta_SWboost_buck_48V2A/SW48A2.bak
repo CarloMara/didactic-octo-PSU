@@ -972,12 +972,10 @@ Wire Wire Line
 Wire Wire Line
 	8750 2300 7375 2300
 Connection ~ 8550 2300
-Wire Wire Line
-	6850 2350 6900 2350
 Connection ~ 6850 2250
-Text Label 6900 2350 0    60   ~ 0
+Text Label 6850 2325 0    60   ~ 0
 SW2
-Text Label 4400 2225 0    60   ~ 0
+Text Label 4575 2250 0    60   ~ 0
 SW1
 Wire Wire Line
 	4425 5600 4425 5525
@@ -1079,13 +1077,13 @@ $EndComp
 $Comp
 L TEST_1P W10
 U 1 1 58BAF01F
-P 6900 2350
-F 0 "W10" H 6900 2620 50  0000 C CNN
-F 1 "TEST_1P" H 6900 2550 50  0000 C CNN
-F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Big" H 7100 2350 50  0001 C CNN
-F 3 "" H 7100 2350 50  0000 C CNN
-	1    6900 2350
-	0    1    1    0   
+P 6850 2350
+F 0 "W10" H 6850 2620 50  0000 C CNN
+F 1 "TEST_1P" H 6850 2550 50  0000 C CNN
+F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Big" H 7050 2350 50  0001 C CNN
+F 3 "" H 7050 2350 50  0000 C CNN
+	1    6850 2350
+	-1   0    0    1   
 $EndComp
 Text Label 6300 1550 0    60   ~ 0
 VOUT
