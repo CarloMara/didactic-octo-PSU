@@ -1,0 +1,92 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:NUCLEO_F3030K8
+LIBS:MCP4706
+LIBS:LM4040
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L NUCLEO_F3030K8 U?
+U 1 1 58E619FE
+P 2525 3100
+F 0 "U?" H 2525 3000 50  0000 C CNN
+F 1 "NUCLEO_F3030K8" H 2550 4050 50  0000 C CNN
+F 2 "MODULE" H 2525 3100 50  0001 C CNN
+F 3 "DOCUMENTATION" H 2525 3100 50  0001 C CNN
+	1    2525 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L MCP4706 U?
+U 1 1 58E61C2E
+P 6475 2975
+F 0 "U?" H 6475 2875 50  0000 C CNN
+F 1 "MCP4706" H 6475 3075 50  0000 C CNN
+F 2 "MODULE" H 6475 2975 50  0001 C CNN
+F 3 "DOCUMENTATION" H 6475 2975 50  0001 C CNN
+	1    6475 2975
+	1    0    0    -1  
+$EndComp
+$Comp
+L MCP4706 U?
+U 1 1 58E61D55
+P 6475 3725
+F 0 "U?" H 6475 3625 50  0000 C CNN
+F 1 "MCP4706" H 6475 3825 50  0000 C CNN
+F 2 "MODULE" H 6475 3725 50  0001 C CNN
+F 3 "DOCUMENTATION" H 6475 3725 50  0001 C CNN
+	1    6475 3725
+	1    0    0    -1  
+$EndComp
+$Comp
+L LM4040 U?
+U 1 1 58E62387
+P 6475 2275
+F 0 "U?" H 6475 2175 50  0000 C CNN
+F 1 "LM4040" H 6475 2575 50  0000 C CNN
+F 2 "MODULE" H 6475 2275 50  0001 C CNN
+F 3 "DOCUMENTATION" H 6475 2275 50  0001 C CNN
+	1    6475 2275
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
