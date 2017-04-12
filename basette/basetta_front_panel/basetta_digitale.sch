@@ -32,7 +32,7 @@ LIBS:NUCLEO_F3030K8
 LIBS:MCP4706
 LIBS:LM4040
 LIBS:basetta_digitale-cache
-EELAYER 25 0
+EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -177,17 +177,6 @@ SDA
 Text Label 1375 3100 0    60   ~ 0
 SCL
 $Comp
-L Screw_Terminal_1x02 J1
-U 1 1 58ED6926
-P 1300 7000
-F 0 "J1" H 1300 7250 50  0000 C TNN
-F 1 "IN" H 1150 7000 50  0000 C TNN
-F 2 "" H 1300 6775 50  0001 C CNN
-F 3 "" H 1275 7000 50  0001 C CNN
-	1    1300 7000
-	1    0    0    -1  
-$EndComp
-$Comp
 L CP C1
 U 1 1 58ED6C54
 P 1850 7025
@@ -221,7 +210,11 @@ F 3 "" H 2800 6925 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1825 6875 2400 6875
+	1825 6875 1850 6875
+Wire Wire Line
+	1850 6875 2150 6875
+Wire Wire Line
+	2150 6875 2400 6875
 $Comp
 L D D1
 U 1 1 58ED750D
@@ -238,19 +231,33 @@ Connection ~ 1850 6875
 Wire Wire Line
 	1525 6875 1500 6875
 Wire Wire Line
-	1500 6875 1500 6900
+	1500 7075 1550 7075
 Wire Wire Line
-	1500 7100 1525 7100
+	1550 7075 1550 7175
 Wire Wire Line
-	1525 7100 1525 7175
+	1550 7175 1850 7175
 Wire Wire Line
-	1525 7175 3875 7175
+	1850 7175 2150 7175
+Wire Wire Line
+	2150 7175 2800 7175
+Wire Wire Line
+	2800 7175 3150 7175
+Wire Wire Line
+	3150 7175 3400 7175
+Wire Wire Line
+	3400 7175 3675 7175
+Wire Wire Line
+	3675 7175 3875 7175
 Connection ~ 1850 7175
 Connection ~ 2150 7175
 Connection ~ 2800 7175
 Wire Wire Line
-	3200 6875 4075 6875
-Text Label 3950 7125 0    60   ~ 0
+	3200 6875 3400 6875
+Wire Wire Line
+	3400 6875 3675 6875
+Wire Wire Line
+	3675 6875 3950 6875
+Text Label 3975 7200 0    60   ~ 0
 Vss
 $Comp
 L GND #PWR1
@@ -266,7 +273,7 @@ $EndComp
 Wire Wire Line
 	3150 7300 3150 7175
 Connection ~ 3150 7175
-Text Label 3950 6825 0    60   ~ 0
+Text Label 3850 6875 0    60   ~ 0
 Vdd
 Wire Wire Line
 	3675 2400 3275 2400
@@ -274,8 +281,6 @@ Wire Wire Line
 	3275 2500 3675 2500
 Wire Wire Line
 	3275 2600 3675 2600
-Wire Wire Line
-	3275 2700 3675 2700
 Wire Wire Line
 	3675 2800 3275 2800
 Wire Wire Line
@@ -293,10 +298,6 @@ Wire Wire Line
 Wire Wire Line
 	3675 3500 3275 3500
 Wire Wire Line
-	3275 3600 3675 3600
-Wire Wire Line
-	3275 3700 3675 3700
-Wire Wire Line
 	3275 3800 3675 3800
 Entry Wire Line
 	3675 2400 3775 2500
@@ -304,8 +305,6 @@ Entry Wire Line
 	3675 2500 3775 2600
 Entry Wire Line
 	3675 2600 3775 2700
-Entry Wire Line
-	3675 2700 3775 2800
 Entry Wire Line
 	3675 2800 3775 2900
 Entry Wire Line
@@ -324,10 +323,6 @@ Entry Wire Line
 	3675 3500 3775 3600
 Entry Wire Line
 	3675 3800 3775 3900
-Entry Wire Line
-	3675 3700 3775 3800
-Entry Wire Line
-	3675 3600 3775 3700
 Text Label 3275 2500 0    60   ~ 0
 Vss
 Text Label 3275 2400 0    60   ~ 0
@@ -335,9 +330,39 @@ Vdd
 Text Label 1375 2700 0    60   ~ 0
 Vss
 Wire Bus Line
-	3775 2500 3775 4225
+	3775 2500 3775 2600
 Wire Bus Line
-	1275 4225 8375 4225
+	3775 2600 3775 2700
+Wire Bus Line
+	3775 2700 3775 2800
+Wire Bus Line
+	3775 2800 3775 2900
+Wire Bus Line
+	3775 2900 3775 3000
+Wire Bus Line
+	3775 3000 3775 3100
+Wire Bus Line
+	3775 3100 3775 3200
+Wire Bus Line
+	3775 3200 3775 3300
+Wire Bus Line
+	3775 3300 3775 3400
+Wire Bus Line
+	3775 3400 3775 3500
+Wire Bus Line
+	3775 3500 3775 3600
+Wire Bus Line
+	3775 3600 3775 3700
+Wire Bus Line
+	3775 3700 3775 3800
+Wire Bus Line
+	3775 3800 3775 3900
+Wire Bus Line
+	3775 3900 3775 4225
+Wire Bus Line
+	1275 4225 1850 4225
+Wire Bus Line
+	1850 4225 8375 4225
 Entry Bus Bus
 	1750 4325 1850 4225
 Wire Wire Line
@@ -475,13 +500,79 @@ Entry Wire Line
 Wire Wire Line
 	5725 2225 5325 2225
 Wire Bus Line
-	1750 4325 1750 5975
+	1750 4325 1750 4700
 Wire Bus Line
-	1275 2500 1275 4225
+	1750 4700 1750 4800
+Wire Bus Line
+	1750 4800 1750 4900
+Wire Bus Line
+	1750 4900 1750 5000
+Wire Bus Line
+	1750 5000 1750 5100
+Wire Bus Line
+	1750 5100 1750 5425
+Wire Bus Line
+	1750 5425 1750 5525
+Wire Bus Line
+	1750 5525 1750 5625
+Wire Bus Line
+	1750 5625 1750 5725
+Wire Bus Line
+	1750 5725 1750 5825
+Wire Bus Line
+	1750 5825 1750 5975
+Wire Bus Line
+	1275 2500 1275 2600
+Wire Bus Line
+	1275 2600 1275 2700
+Wire Bus Line
+	1275 2700 1275 2800
+Wire Bus Line
+	1275 2800 1275 2900
+Wire Bus Line
+	1275 2900 1275 3000
+Wire Bus Line
+	1275 3000 1275 3100
+Wire Bus Line
+	1275 3100 1275 3200
+Wire Bus Line
+	1275 3200 1275 3300
+Wire Bus Line
+	1275 3300 1275 3400
+Wire Bus Line
+	1275 3400 1275 3500
+Wire Bus Line
+	1275 3500 1275 3600
+Wire Bus Line
+	1275 3600 1275 3700
+Wire Bus Line
+	1275 3700 1275 3800
+Wire Bus Line
+	1275 3800 1275 3900
+Wire Bus Line
+	1275 3900 1275 4225
 Wire Bus Line
 	1750 5975 3250 5975
 Wire Bus Line
-	3250 5975 3250 4700
+	3250 5975 3250 5825
+Wire Bus Line
+	3250 5825 3250 5725
+Wire Bus Line
+	3250 5725 3250 5625
+Wire Bus Line
+	3250 5625 3250 5525
+Wire Bus Line
+	3250 5525 3250 5425
+Wire Bus Line
+	3250 5425 3250 5100
+Wire Bus Line
+	3250 5100 3250 5000
+Wire Bus Line
+	3250 5000 3250 4900
+Wire Bus Line
+	3250 4900 3250 4800
+Wire Bus Line
+	3250 4800 3250 4700
 Text Label 1850 4600 0    60   ~ 0
 Vdd
 Text Label 1850 4700 0    60   ~ 0
@@ -524,7 +615,17 @@ Text Label 2750 5325 0    60   ~ 0
 SCK
 NoConn ~ 5325 2225
 Wire Bus Line
-	5225 2975 5225 4225
+	5225 2975 5225 3075
+Wire Bus Line
+	5225 3075 5225 3175
+Wire Bus Line
+	5225 3175 5225 3725
+Wire Bus Line
+	5225 3725 5225 3825
+Wire Bus Line
+	5225 3825 5225 3925
+Wire Bus Line
+	5225 3925 5225 4225
 Text Label 7225 3825 0    60   ~ 0
 SDA
 Text Label 7225 3725 0    60   ~ 0
@@ -550,7 +651,9 @@ TX
 Text Label 1375 2500 0    60   ~ 0
 RX
 Wire Wire Line
-	7225 2325 7625 2325
+	7225 2325 7475 2325
+Wire Wire Line
+	7475 2325 7625 2325
 Wire Wire Line
 	7475 2325 7475 2100
 $Comp
@@ -615,15 +718,11 @@ $EndComp
 Wire Wire Line
 	4375 6900 4375 6875
 Wire Wire Line
-	3875 7200 4375 7200
+	3875 7200 3950 7200
+Wire Wire Line
+	3950 7200 4375 7200
 Wire Wire Line
 	3875 7175 3875 7200
-Wire Wire Line
-	3950 6825 3950 6875
-Connection ~ 3950 6875
-Wire Wire Line
-	3950 7125 3950 7200
-Connection ~ 3950 7200
 Text Label 5325 3625 0    60   ~ 0
 VOUT1
 Text Label 5325 2875 0    60   ~ 0
@@ -646,13 +745,27 @@ F 3 "" H 9000 4625 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 Wire Bus Line
-	8375 4225 8375 4625
+	8375 4225 8375 4425
+Wire Bus Line
+	8375 4425 8375 4625
 Wire Wire Line
 	8825 4725 8475 4725
 Entry Wire Line
 	7625 2325 7725 2425
 Wire Bus Line
-	7725 2425 7725 4225
+	7725 2425 7725 2975
+Wire Bus Line
+	7725 2975 7725 3075
+Wire Bus Line
+	7725 3075 7725 3175
+Wire Bus Line
+	7725 3175 7725 3725
+Wire Bus Line
+	7725 3725 7725 3825
+Wire Bus Line
+	7725 3825 7725 3925
+Wire Bus Line
+	7725 3925 7725 4225
 Connection ~ 7475 2325
 Text Label 7525 2325 0    60   ~ 0
 VREF
@@ -695,11 +808,28 @@ SCK
 Text Label 3275 3100 0    60   ~ 0
 SD_CSEL
 Wire Bus Line
-	5225 3000 5225 2425
+	5225 3000 5225 2975
+Wire Bus Line
+	5225 2975 5225 2425
 Text Label 5325 2325 0    60   ~ 0
 Vss
 Wire Notes Line
 	6970 6540 480  6540
 Text Notes 475  6625 0    60   Italic 12
 Linear regulator
+$Comp
+L Screw_Terminal_1x02 J1
+U 1 1 58ED6926
+P 1300 6975
+F 0 "J1" H 1300 7225 50  0000 C TNN
+F 1 "IN" H 1150 6975 50  0000 C TNN
+F 2 "" H 1300 6750 50  0001 C CNN
+F 3 "" H 1275 6975 50  0001 C CNN
+	1    1300 6975
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3950 6875 4075 6875
+Text Notes 3025 1350 0    60   ~ 0
+1-sisgtemare il bus\n2-finire la resistenza di biasing del reference\n3-mettere degli amplificatori per disaccopiare i dac\n4-predisporre per gli ingressi degli adc\n5-capire come gesire le alimentazioni ci penso io
 $EndSCHEMATC

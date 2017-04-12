@@ -37,9 +37,9 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title ""
-Date ""
-Rev ""
+Title "NUCLEO AND DAC FOR PSU"
+Date "2017-04-11"
+Rev "1.0"
 Comp ""
 Comment1 ""
 Comment2 ""
@@ -181,7 +181,7 @@ L Screw_Terminal_1x02 J1
 U 1 1 58ED6926
 P 1300 7000
 F 0 "J1" H 1300 7250 50  0000 C TNN
-F 1 "Screw_Terminal_1x02" V 1150 7000 50  0000 C TNN
+F 1 "IN" H 1150 7000 50  0000 C TNN
 F 2 "" H 1300 6775 50  0001 C CNN
 F 3 "" H 1275 7000 50  0001 C CNN
 	1    1300 7000
@@ -639,7 +639,7 @@ L Screw_Terminal_1x02 J2
 U 1 1 58EF60CD
 P 9025 4625
 F 0 "J2" H 9025 4875 50  0000 C TNN
-F 1 "Screw_Terminal_1x02" V 8875 4625 50  0000 C TNN
+F 1 "DAC_OUT" H 8800 4625 50  0000 C TNN
 F 2 "" H 9025 4400 50  0001 C CNN
 F 3 "" H 9000 4625 50  0001 C CNN
 	1    9025 4625
@@ -698,4 +698,8 @@ Wire Bus Line
 	5225 3000 5225 2425
 Text Label 5325 2325 0    60   ~ 0
 Vss
+Wire Notes Line
+	6970 6540 480  6540
+Text Notes 475  6625 0    60   Italic 12
+Linear regulator
 $EndSCHEMATC
