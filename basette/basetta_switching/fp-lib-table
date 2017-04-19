@@ -1,4 +1,4 @@
 (fp_lib_table
   (lib (name NexFET)(type KiCad)(uri /home/carlo/progetti/didactic-octo-psu/basette/basetta_switching/Footprint/NexFET.pretty)(options "")(descr ""))
-  (lib (name LM5175PWPR)(type Legacy)(uri "$(KIPRJMOD)/Footprint/LM5175PWPR.mod")(options "")(descr ""))
+  (lib (name lm5175)(type KiCad)(uri "$(KIPRJMOD)/Footprint/lm5175.pretty")(options "")(descr ""))
 )

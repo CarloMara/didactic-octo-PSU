@@ -594,7 +594,7 @@ F 1 "Screw_Terminal_1x02" V 10675 2200 50  0000 C TNN
 F 2 "Connectors_Terminal_Blocks:TerminalBlock_Pheonix_MPT-2.54mm_2pol" H 10825 1975 50  0001 C CNN
 F 3 "" H 10800 2200 50  0001 C CNN
 	1    10825 2200
-	-1   0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
 L R R13
