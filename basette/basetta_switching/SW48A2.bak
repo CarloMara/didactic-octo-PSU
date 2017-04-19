@@ -594,7 +594,7 @@ F 1 "Screw_Terminal_1x02" V 10675 2200 50  0000 C TNN
 F 2 "Connectors_Terminal_Blocks:TerminalBlock_Pheonix_MPT-2.54mm_2pol" H 10825 1975 50  0001 C CNN
 F 3 "" H 10800 2200 50  0001 C CNN
 	1    10825 2200
-	-1   0    0    1   
+	-1   0    0    -1  
 $EndComp
 $Comp
 L R R13
@@ -990,4 +990,10 @@ Text Label 1700 3350 0    60   ~ 0
 PGOOD
 Text Label 2475 5850 0    60   ~ 0
 GND
+Text Label 4225 5750 0    60   ~ 0
+FB
+Text Label 6275 3875 0    60   ~ 0
+CSR
+Text Label 6675 4350 0    60   ~ 0
+CSGR
 $EndSCHEMATC

@@ -992,4 +992,8 @@ Text Label 2475 5850 0    60   ~ 0
 GND
 Text Label 4225 5750 0    60   ~ 0
 FB
+Text Label 6275 3875 0    60   ~ 0
+CSR
+Text Label 6675 4350 0    60   ~ 0
+CSGR
 $EndSCHEMATC
