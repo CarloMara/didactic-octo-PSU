@@ -58,39 +58,6 @@ F 3 "DOCUMENTATION" H 2525 3100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L MCP4706 U4
-U 1 1 58E61C2E
-P 6475 2975
-F 0 "U4" H 6475 2875 50  0000 C CNN
-F 1 "MCP4706" H 6475 3075 50  0000 C CNN
-F 2 "TO_SOT_Packages_SMD:TSOT-23-6_MK06A_HandSoldering" H 6475 2975 50  0001 C CNN
-F 3 "DOCUMENTATION" H 6475 2975 50  0001 C CNN
-	1    6475 2975
-	1    0    0    -1  
-$EndComp
-$Comp
-L MCP4706 U5
-U 1 1 58E61D55
-P 6475 3725
-F 0 "U5" H 6475 3625 50  0000 C CNN
-F 1 "MCP4706" H 6475 3825 50  0000 C CNN
-F 2 "TO_SOT_Packages_SMD:TSOT-23-6_MK06A_HandSoldering" H 6475 3725 50  0001 C CNN
-F 3 "DOCUMENTATION" H 6475 3725 50  0001 C CNN
-	1    6475 3725
-	1    0    0    -1  
-$EndComp
-$Comp
-L LM4040 U3
-U 1 1 58E62387
-P 6475 2275
-F 0 "U3" H 6475 2175 50  0000 C CNN
-F 1 "LM4040" H 6475 2575 50  0000 C CNN
-F 2 "TO_SOT_Packages_SMD:TSOT-23" H 6475 2275 50  0001 C CNN
-F 3 "DOCUMENTATION" H 6475 2275 50  0001 C CNN
-	1    6475 2275
-	1    0    0    -1  
-$EndComp
-$Comp
 L CONN_02X05 EXP1
 U 1 1 58ED312D
 P 2500 4800
@@ -374,44 +341,6 @@ Entry Wire Line
 	3150 5625 3250 5725
 Entry Wire Line
 	3150 5525 3250 5625
-Wire Wire Line
-	7625 3725 7225 3725
-Wire Wire Line
-	7225 3825 7625 3825
-Entry Wire Line
-	7625 3725 7725 3825
-Entry Wire Line
-	7625 3825 7725 3925
-Wire Wire Line
-	7625 2975 7225 2975
-Wire Wire Line
-	7225 3075 7625 3075
-Entry Wire Line
-	7625 2975 7725 3075
-Entry Wire Line
-	7625 3075 7725 3175
-Wire Wire Line
-	5725 3825 5325 3825
-Entry Wire Line
-	5225 3925 5325 3825
-Wire Wire Line
-	5725 3725 5325 3725
-Entry Wire Line
-	5225 3825 5325 3725
-Wire Wire Line
-	5725 3625 5325 3625
-Wire Wire Line
-	5725 3075 5325 3075
-Entry Wire Line
-	5225 3175 5325 3075
-Wire Wire Line
-	5725 2975 5325 2975
-Entry Wire Line
-	5225 3075 5325 2975
-Wire Wire Line
-	5725 2325 5325 2325
-Wire Wire Line
-	5725 2225 5325 2225
 Wire Bus Line
 	1750 4325 1750 5975
 Wire Bus Line
@@ -460,25 +389,6 @@ Text Label 2750 5425 0    60   ~ 0
 SD_CSEL
 Text Label 2750 5325 0    60   ~ 0
 SCK
-NoConn ~ 5325 2225
-Wire Bus Line
-	5225 4225 5225 2975
-Text Label 7225 3825 0    60   ~ 0
-SDA
-Text Label 7225 3725 0    60   ~ 0
-SCL
-Text Label 7225 3075 0    60   ~ 0
-SDA
-Text Label 7225 2975 0    60   ~ 0
-SCL
-Text Label 5325 3825 0    60   ~ 0
-Vdd
-Text Label 5325 3725 0    60   ~ 0
-Vss
-Text Label 5325 3075 0    60   ~ 0
-Vdd
-Text Label 5325 2975 0    60   ~ 0
-Vss
 Text Label 1375 3800 0    60   ~ 0
 MISO
 Text Label 1375 3700 0    60   ~ 0
@@ -487,21 +397,6 @@ Text Label 1375 2400 0    60   ~ 0
 TX
 Text Label 1375 2500 0    60   ~ 0
 RX
-Wire Wire Line
-	7225 2325 7625 2325
-Wire Wire Line
-	7475 2325 7475 2100
-$Comp
-L R R2
-U 1 1 58EF19C3
-P 7475 1950
-F 0 "R2" V 7555 1950 50  0000 C CNN
-F 1 "R" V 7475 1950 50  0000 C CNN
-F 2 "Resistors_SMD:R_1218_HandSoldering" V 7405 1950 50  0001 C CNN
-F 3 "" H 7475 1950 50  0000 C CNN
-	1    7475 1950
-	1    0    0    -1  
-$EndComp
 $Comp
 L C C3
 U 1 1 58EF2498
@@ -556,23 +451,6 @@ Wire Wire Line
 	3875 7200 4375 7200
 Wire Wire Line
 	3875 7175 3875 7200
-Text Label 5325 3625 0    60   ~ 0
-VOUT1
-Text Label 5325 2875 0    60   ~ 0
-VOUT2
-Wire Bus Line
-	7725 4225 7725 3075
-Connection ~ 7475 2325
-Text Label 7625 2325 0    60   ~ 0
-VREF
-Text Label 7225 2875 0    60   ~ 0
-VREF
-Text Label 7225 3625 0    60   ~ 0
-VREF
-Text Label 5025 4650 0    60   ~ 0
-VOUT1
-Text Label 5025 5400 0    60   ~ 0
-VOUT2
 Text Label 1375 2800 0    60   ~ 0
 Beeper
 Text Label 1375 2900 0    60   ~ 0
@@ -603,8 +481,6 @@ Text Label 3275 3200 0    60   ~ 0
 SCK
 Text Label 3275 3100 0    60   ~ 0
 SD_CSEL
-Text Label 5325 2325 0    60   ~ 0
-Vss
 Wire Notes Line
 	6970 6540 480  6540
 Text Notes 475  6625 0    60   Italic 12
@@ -615,79 +491,11 @@ U 1 1 58ED6926
 P 1300 6975
 F 0 "J1" H 1300 7225 50  0000 C TNN
 F 1 "IN" H 1150 6975 50  0000 C TNN
-F 2 "Connectors_Terminal_Blocks:TerminalBlock_Pheonix_MKDS1.5-2pol" H 1300 6750 50  0001 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x02" H 1300 6750 50  0001 C CNN
 F 3 "" H 1275 6975 50  0001 C CNN
 	1    1300 6975
 	1    0    0    -1  
 $EndComp
-Text Notes 3025 1350 0    60   ~ 0
-2-finire la resistenza di biasing del reference\n3-mettere degli amplificatori per disaccopiare i dac\n4-predisporre per gli ingressi degli adc\n5-capire come gesire le alimentazioni ci penso io
-Text Label 7475 1800 0    60   ~ 0
-Vdd
-Wire Wire Line
-	5725 2875 5325 2875
-Wire Bus Line
-	1275 4225 7725 4225
-$Comp
-L OP275 U6
-U 1 1 58F54ECC
-P 5775 4750
-F 0 "U6" H 5775 4900 50  0000 L CNN
-F 1 "OP275" H 5775 4600 50  0000 L CNN
-F 2 "Housings_DIP:DIP-8_W7.62mm" H 5675 4800 50  0001 C CNN
-F 3 "" H 5775 4900 50  0000 C CNN
-	1    5775 4750
-	1    0    0    -1  
-$EndComp
-$Comp
-L OP275 U6
-U 2 1 58F55377
-P 5775 5500
-F 0 "U6" H 5775 5650 50  0000 L CNN
-F 1 "OP275" H 5775 5350 50  0000 L CNN
-F 2 "Housings_DIP:DIP-8_W7.62mm" H 5675 5550 50  0001 C CNN
-F 3 "" H 5775 5650 50  0000 C CNN
-	2    5775 5500
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6075 5500 6250 5500
-Wire Wire Line
-	6250 5225 6250 6000
-Wire Wire Line
-	6250 5225 6575 5225
-Wire Wire Line
-	6575 5025 6250 5025
-Wire Wire Line
-	6250 4750 6250 5125
-Wire Wire Line
-	6250 4750 6075 4750
-Wire Wire Line
-	6250 6000 5325 6000
-Wire Wire Line
-	5325 6000 5325 5600
-Wire Wire Line
-	5325 5600 5475 5600
-Connection ~ 6250 5500
-Wire Wire Line
-	6250 5125 5350 5125
-Wire Wire Line
-	5350 5125 5350 4850
-Wire Wire Line
-	5350 4850 5475 4850
-Connection ~ 6250 5025
-Wire Wire Line
-	5025 4650 5475 4650
-Wire Wire Line
-	5025 5400 5475 5400
-Text Label 5675 5050 0    60   ~ 0
-Vss
-Text Label 5675 5800 0    60   ~ 0
-Vss
-Text Label 5675 5200 0    60   ~ 0
-Vdd
-Text Label 5675 4450 0    60   ~ 0
-Vdd
 Text Label 3275 3600 0    60   ~ 0
 VREF
 NoConn ~ 3275 3700
@@ -696,66 +504,6 @@ Text Label 3275 2800 0    60   ~ 0
 AN1
 Text Label 3275 2900 0    60   ~ 0
 AN2
-$Comp
-L Screw_Terminal_1x03 J3
-U 1 1 58F5F5C0
-P 9050 5100
-F 0 "J3" H 9050 5450 50  0000 C TNN
-F 1 "ADC_IN" V 8900 5100 50  0000 C TNN
-F 2 "Connectors_Terminal_Blocks:TerminalBlock_Pheonix_MKDS1.5-3pol" H 9050 4775 50  0001 C CNN
-F 3 "" H 9025 5200 50  0001 C CNN
-	1    9050 5100
-	-1   0    0    1   
-$EndComp
-Text Label 8650 4900 0    60   ~ 0
-AN1
-Text Label 8650 5100 0    60   ~ 0
-AN2
-Wire Wire Line
-	8850 5300 8650 5300
-Wire Wire Line
-	8850 5100 8650 5100
-Wire Wire Line
-	8850 4900 8650 4900
-Wire Wire Line
-	8650 5300 8650 5375
-$Comp
-L GND #PWR02
-U 1 1 58F61696
-P 8650 5375
-F 0 "#PWR02" H 8650 5125 50  0001 C CNN
-F 1 "GND" H 8650 5225 50  0000 C CNN
-F 2 "" H 8650 5375 50  0000 C CNN
-F 3 "" H 8650 5375 50  0000 C CNN
-	1    8650 5375
-	1    0    0    -1  
-$EndComp
-$Comp
-L Screw_Terminal_1x03 J2
-U 1 1 58F61BC7
-P 6775 5225
-F 0 "J2" H 6775 5575 50  0000 C TNN
-F 1 "DAC_OUT" V 6625 5225 50  0000 C TNN
-F 2 "Connectors_Terminal_Blocks:TerminalBlock_Pheonix_MKDS1.5-3pol" H 6775 4900 50  0001 C CNN
-F 3 "" H 6750 5325 50  0001 C CNN
-	1    6775 5225
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	6575 5425 6375 5425
-Wire Wire Line
-	6375 5425 6375 5500
-$Comp
-L GND #PWR03
-U 1 1 58F6208A
-P 6375 5500
-F 0 "#PWR03" H 6375 5250 50  0001 C CNN
-F 1 "GND" H 6375 5350 50  0000 C CNN
-F 2 "" H 6375 5500 50  0000 C CNN
-F 3 "" H 6375 5500 50  0000 C CNN
-	1    6375 5500
-	1    0    0    -1  
-$EndComp
 $Comp
 L LM7805CT U2
 U 1 1 58F6542A
@@ -767,4 +515,6 @@ F 3 "" H 2800 6925 50  0000 C CNN
 	1    2800 6925
 	1    0    0    -1  
 $EndComp
+Wire Bus Line
+	1275 4225 3775 4225
 $EndSCHEMATC

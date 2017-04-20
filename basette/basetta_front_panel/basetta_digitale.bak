@@ -615,7 +615,7 @@ U 1 1 58ED6926
 P 1300 6975
 F 0 "J1" H 1300 7225 50  0000 C TNN
 F 1 "IN" H 1150 6975 50  0000 C TNN
-F 2 "Connectors_Terminal_Blocks:TerminalBlock_Pheonix_MKDS1.5-2pol" H 1300 6750 50  0001 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x02" H 1300 6750 50  0001 C CNN
 F 3 "" H 1275 6975 50  0001 C CNN
 	1    1300 6975
 	1    0    0    -1  
@@ -702,7 +702,7 @@ U 1 1 58F5F5C0
 P 9050 5100
 F 0 "J3" H 9050 5450 50  0000 C TNN
 F 1 "ADC_IN" V 8900 5100 50  0000 C TNN
-F 2 "Connectors_Terminal_Blocks:TerminalBlock_Pheonix_MKDS1.5-3pol" H 9050 4775 50  0001 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x03" H 9050 4775 50  0001 C CNN
 F 3 "" H 9025 5200 50  0001 C CNN
 	1    9050 5100
 	-1   0    0    1   
@@ -736,7 +736,7 @@ U 1 1 58F61BC7
 P 6775 5225
 F 0 "J2" H 6775 5575 50  0000 C TNN
 F 1 "DAC_OUT" V 6625 5225 50  0000 C TNN
-F 2 "Connectors_Terminal_Blocks:TerminalBlock_Pheonix_MKDS1.5-3pol" H 6775 4900 50  0001 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x03" H 6775 4900 50  0001 C CNN
 F 3 "" H 6750 5325 50  0001 C CNN
 	1    6775 5225
 	-1   0    0    1   
@@ -757,12 +757,12 @@ F 3 "" H 6375 5500 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L LM7805CT U?
+L LM7805CT U2
 U 1 1 58F6542A
 P 2800 6925
-F 0 "U?" H 2600 7125 50  0000 C CNN
+F 0 "U2" H 2600 7125 50  0000 C CNN
 F 1 "LM7805CT" H 2800 7125 50  0000 L CNN
-F 2 "TO-220" H 2800 7025 50  0000 C CIN
+F 2 "Power_Integrations:TO-220" H 2800 7025 50  0000 C CIN
 F 3 "" H 2800 6925 50  0000 C CNN
 	1    2800 6925
 	1    0    0    -1  
