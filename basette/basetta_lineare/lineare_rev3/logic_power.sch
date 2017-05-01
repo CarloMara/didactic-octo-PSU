@@ -1,5 +1,4 @@
 EESchema Schematic File Version 2
-LIBS:alimentatore-rescue
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -29,15 +28,12 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
-LIBS:microchip_pic16mcu
-LIBS:MCP4726
-LIBS:PIC16F18323
 LIBS:alimentatore-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 2
+Sheet 3 3
 Title ""
 Date ""
 Rev ""
@@ -47,21 +43,10 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L CONN_01X03 P6
-U 1 1 584EB73C
-P 2275 3800
-F 0 "P6" H 2275 4000 50  0000 C CNN
-F 1 "LOGIC_POWER_01X03" V 2375 3800 50  0000 C CNN
-F 2 "w_conn_screw:mors_3p" H 2275 3800 50  0001 C CNN
-F 3 "" H 2275 3800 50  0000 C CNN
-	1    2275 3800
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
-	3175 3700 2475 3700
+	3175 3600 2475 3600
 Wire Wire Line
-	2475 3900 3175 3900
+	2475 4000 3175 4000
 Wire Wire Line
 	3175 4700 3675 4700
 Wire Wire Line
@@ -74,17 +59,6 @@ Wire Wire Line
 	3675 2900 3900 2900
 Wire Wire Line
 	3900 2900 3950 2900
-$Comp
-L LM7912CT U9
-U 1 1 584EB856
-P 4350 4650
-F 0 "U9" H 4150 4450 50  0000 C CNN
-F 1 "LM7912CT" H 4350 4450 50  0000 L CNN
-F 2 "Power_Integrations:TO-220" H 4350 4550 50  0000 C CIN
-F 3 "" H 4350 4650 50  0000 C CNN
-	1    4350 4650
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	2475 3800 3675 3800
 Wire Wire Line
@@ -122,17 +96,6 @@ Wire Wire Line
 Wire Wire Line
 	3675 3800 3675 4050
 Connection ~ 3675 3800
-$Comp
-L LM7812CT-RESCUE-alimentatore U8
-U 1 1 584EBA0F
-P 4350 2950
-F 0 "U8" H 4150 3150 50  0000 C CNN
-F 1 "LM7812CT" H 4350 3150 50  0000 L CNN
-F 2 "Power_Integrations:TO-220" H 4350 3050 50  0000 C CIN
-F 3 "" H 4350 2950 50  0000 C CNN
-	1    4350 2950
-	1    0    0    -1  
-$EndComp
 $Comp
 L CP C10
 U 1 1 584EBAEE
@@ -362,19 +325,6 @@ F 3 "" H 7875 3725 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L LM7805CT-RESCUE-alimentatore U7
-U 1 1 584ECCE1
-P 6925 2925
-AR Path="/584ECCE1" Ref="U7"  Part="1" 
-AR Path="/584EB66A/584ECCE1" Ref="U7"  Part="1" 
-F 0 "U7" H 6725 3125 50  0000 C CNN
-F 1 "LM7805CT" H 6925 3125 50  0000 L CNN
-F 2 "Power_Integrations:TO-220" H 6925 3025 50  0000 C CIN
-F 3 "" H 6925 2925 50  0000 C CNN
-	1    6925 2925
-	1    0    0    -1  
-$EndComp
-$Comp
 L +5V #PWR030
 U 1 1 584ECDAF
 P 7875 2850
@@ -386,40 +336,7 @@ F 3 "" H 7875 2850 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3175 3900 3175 4700
-$Comp
-L HEADER_1 J10
-U 1 1 5850C1CB
-P 7500 2775
-F 0 "J10" V 7750 2775 60  0000 C CNN
-F 1 "TP1" V 7650 2775 60  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x01" H 7500 2775 60  0001 C CNN
-F 3 "" H 7500 2775 60  0000 C CNN
-	1    7500 2775
-	0    -1   -1   0   
-$EndComp
-$Comp
-L HEADER_1 J11
-U 1 1 5850C32B
-P 4925 2800
-F 0 "J11" V 5175 2800 60  0000 C CNN
-F 1 "TP2" V 5075 2800 60  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x01" H 4925 2800 60  0001 C CNN
-F 3 "" H 4925 2800 60  0000 C CNN
-	1    4925 2800
-	0    -1   -1   0   
-$EndComp
-$Comp
-L HEADER_1 J12
-U 1 1 5850C51C
-P 4925 4800
-F 0 "J12" V 5175 4800 60  0000 C CNN
-F 1 "TP3" V 5075 4800 60  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x01" H 4925 4800 60  0001 C CNN
-F 3 "" H 4925 4800 60  0000 C CNN
-	1    4925 4800
-	0    1    1    0   
-$EndComp
+	3175 4000 3175 4700
 $Comp
 L +12VA #PWR031
 U 1 1 58619CB6
@@ -434,5 +351,49 @@ $EndComp
 Wire Wire Line
 	5750 2850 5750 2875
 Wire Wire Line
-	3175 3700 3175 2900
+	3175 3600 3175 2900
+$Comp
+L LM7812ACT U?
+U 1 1 59074169
+P 4350 2950
+F 0 "U?" H 4350 3267 50  0000 C CNN
+F 1 "LM7812ACT" H 4350 3176 50  0000 C CNN
+F 2 "TO_SOT_Packages_THT:TO-220_Vertical" H -3275 -2600 50  0001 C CIN
+F 3 "" H -3275 -2700 50  0001 C CNN
+	1    4350 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L LM7912CT U?
+U 1 1 590742BD
+P 4350 4650
+F 0 "U?" H 4350 4426 50  0000 C CNN
+F 1 "LM7912CT" H 4350 4335 50  0000 C CNN
+F 2 "TO_SOT_Packages_THT:TO-220_Vertical" H -1275 -475 50  0001 C CIN
+F 3 "" H -1275 -375 50  0001 C CNN
+	1    4350 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L LM7805CT U?
+U 1 1 590744EF
+P 6925 2925
+F 0 "U?" H 6925 3242 50  0000 C CNN
+F 1 "LM7805CT" H 6925 3151 50  0000 C CNN
+F 2 "TO_SOT_Packages_THT:TO-220_Vertical" H 25  250 50  0001 C CIN
+F 3 "" H 25  150 50  0001 C CNN
+	1    6925 2925
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X03_FEMALE J?
+U 1 1 590746E8
+P 2375 3800
+F 0 "J?" H 2553 3841 50  0000 L CNN
+F 1 "CONN_01X03_FEMALE" H 2553 3750 50  0000 L CNN
+F 2 "" H -5575 -1150 50  0001 C CNN
+F 3 "" H -5575 -1150 50  0001 C CNN
+	1    2375 3800
+	-1   0    0    -1  
+$EndComp
 $EndSCHEMATC

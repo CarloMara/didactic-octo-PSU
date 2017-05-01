@@ -33,7 +33,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 2
+Sheet 1 3
 Title ""
 Date ""
 Rev ""
@@ -431,83 +431,6 @@ F 3 "" H 9600 4075 50  0000 C CNN
 	1    9600 4075
 	1    0    0    -1  
 $EndComp
-$Comp
-L CONN_01X03 P3
-U 1 1 58C5A064
-P 900 1150
-F 0 "P3" H 900 1350 50  0000 C CNN
-F 1 "CONN_01X03" V 1000 1150 50  0000 C CNN
-F 2 "Connectors_Terminal_Blocks:TerminalBlock_Pheonix_PT-3.5mm_3pol" H 900 1150 50  0001 C CNN
-F 3 "" H 900 1150 50  0000 C CNN
-	1    900  1150
-	-1   0    0    -1  
-$EndComp
-$Comp
-L +12VA #PWR011
-U 1 1 58C5A0F8
-P 1200 950
-F 0 "#PWR011" H 1200 800 50  0001 C CNN
-F 1 "+12VA" H 1200 1090 50  0000 C CNN
-F 2 "" H 1200 950 50  0000 C CNN
-F 3 "" H 1200 950 50  0000 C CNN
-	1    1200 950 
-	1    0    0    -1  
-$EndComp
-$Comp
-L -12VA #PWR012
-U 1 1 58C5A159
-P 1200 1325
-F 0 "#PWR012" H 1200 1175 50  0001 C CNN
-F 1 "-12VA" H 1200 1465 50  0000 C CNN
-F 2 "" H 1200 1325 50  0000 C CNN
-F 3 "" H 1200 1325 50  0000 C CNN
-	1    1200 1325
-	-1   0    0    1   
-$EndComp
-$Comp
-L GND #PWR013
-U 1 1 58C5A462
-P 1600 1250
-F 0 "#PWR013" H -4525 -250 50  0001 C CNN
-F 1 "GND" H 1605 1077 50  0000 C CNN
-F 2 "" H -4525 0   50  0001 C CNN
-F 3 "" H -4525 0   50  0001 C CNN
-	1    1600 1250
-	1    0    0    -1  
-$EndComp
-$Comp
-L CONN_01X02 P6
-U 1 1 58C5A712
-P 900 1850
-F 0 "P6" H 900 2000 50  0000 C CNN
-F 1 "LOAD_POWER_01X02" V 1000 1850 50  0000 C CNN
-F 2 "Connectors_Terminal_Blocks:TerminalBlock_Pheonix_PT-3.5mm_2pol" H 900 1850 50  0001 C CNN
-F 3 "" H 900 1850 50  0000 C CNN
-	1    900  1850
-	-1   0    0    1   
-$EndComp
-$Comp
-L +5V #PWR014
-U 1 1 58C5A852
-P 1200 1725
-F 0 "#PWR014" H 1200 1575 50  0001 C CNN
-F 1 "+5V" H 1200 1865 50  0000 C CNN
-F 2 "" H 1200 1725 50  0000 C CNN
-F 3 "" H 1200 1725 50  0000 C CNN
-	1    1200 1725
-	1    0    0    -1  
-$EndComp
-$Comp
-L GND #PWR015
-U 1 1 58C5A918
-P 1200 2000
-F 0 "#PWR015" H -4925 500 50  0001 C CNN
-F 1 "GND" H 1205 1827 50  0000 C CNN
-F 2 "" H -4925 750 50  0001 C CNN
-F 3 "" H -4925 750 50  0001 C CNN
-	1    1200 2000
-	1    0    0    -1  
-$EndComp
 Text Label 2650 1000 0    60   ~ 0
 VIN
 Text Label 3800 1600 0    60   ~ 0
@@ -903,7 +826,7 @@ F 3 "" H 0   -4425 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Sheet
-S 750  4600 1450 650 
+S 750  4600 1450 400 
 U 59078E7F
 F0 "I2C&DAC" 60
 F1 "I2C&DAC.sch" 60
@@ -1079,7 +1002,7 @@ Wire Wire Line
 Wire Wire Line
 	9550 4875 9550 4775
 Wire Wire Line
-	9550 4775 9800 4775
+	9800 4775 9550 4775
 Wire Wire Line
 	9800 4425 9800 4875
 Wire Wire Line
@@ -1159,26 +1082,6 @@ Wire Wire Line
 	4750 2350 4750 2950
 Wire Wire Line
 	7825 4625 8150 4625
-Wire Wire Line
-	1100 1050 1200 1050
-Wire Wire Line
-	1200 1050 1200 950 
-Wire Wire Line
-	1200 1325 1200 1250
-Wire Wire Line
-	1200 1250 1100 1250
-Wire Wire Line
-	1100 1150 1600 1150
-Wire Wire Line
-	1600 1150 1600 1250
-Wire Wire Line
-	1200 2000 1200 1900
-Wire Wire Line
-	1200 1900 1100 1900
-Wire Wire Line
-	1100 1800 1200 1800
-Wire Wire Line
-	1200 1800 1200 1725
 Wire Wire Line
 	4150 2350 3800 2350
 Wire Wire Line
@@ -1346,7 +1249,7 @@ Wire Wire Line
 Wire Wire Line
 	4325 7100 5675 7100
 Wire Wire Line
-	5675 7125 5675 7075
+	5675 7075 5675 7125
 Connection ~ 5675 7100
 Wire Wire Line
 	5675 7425 5675 7475
@@ -1364,4 +1267,10 @@ Wire Wire Line
 	6175 4650 6175 5450
 Wire Wire Line
 	6175 5450 6000 5450
+$Sheet
+S 750  5950 1450 500 
+U 5907F263
+F0 "logic_power" 60
+F1 "logic_power.sch" 60
+$EndSheet
 $EndSCHEMATC

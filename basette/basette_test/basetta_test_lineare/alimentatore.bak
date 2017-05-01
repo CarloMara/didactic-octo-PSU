@@ -29,11 +29,12 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
+LIBS:w_connectors
 LIBS:microchip_pic16mcu
 LIBS:MCP4726
 LIBS:PIC16F18323
 LIBS:alimentatore-cache
-EELAYER 25 0
+EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -456,7 +457,7 @@ F 3 "" H 9350 3600 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L LM741 U1
+L LM741-RESCUE-alimentatore U1
 U 1 1 58501609
 P 4600 1900
 F 0 "U1" H 4600 2150 50  0000 L CNN
@@ -709,7 +710,7 @@ F 3 "" H 4700 2200 50  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L LM741 U2
+L LM741-RESCUE-alimentatore U2
 U 1 1 585015F0
 P 4850 4600
 F 0 "U2" H 4850 4850 50  0000 L CNN
@@ -996,7 +997,7 @@ F 3 "" H 1425 2000 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L LM741 U4
+L LM741-RESCUE-alimentatore U4
 U 1 1 58612FA9
 P 2200 1225
 F 0 "U4" H 2200 1475 50  0000 L CNN
