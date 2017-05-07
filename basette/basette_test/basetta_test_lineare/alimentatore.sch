@@ -29,7 +29,6 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
-LIBS:w_connectors
 LIBS:microchip_pic16mcu
 LIBS:MCP4726
 LIBS:PIC16F18323
