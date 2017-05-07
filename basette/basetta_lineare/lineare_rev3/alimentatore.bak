@@ -521,28 +521,6 @@ voltage_controll
 Text GLabel 9450 3725 2    60   Input ~ 0
 voltage_reference
 $Comp
-L TEST_1P J2
-U 1 1 5906034A
-P 4075 1300
-F 0 "J2" H 4133 1420 50  0000 L CNN
-F 1 "TEST_1P" H 4133 1329 50  0000 L CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm" H -900 -950 50  0001 C CNN
-F 3 "" H -900 -950 50  0001 C CNN
-	1    4075 1300
-	1    0    0    -1  
-$EndComp
-$Comp
-L TEST_1P J3
-U 1 1 59060422
-P 4750 2350
-F 0 "J3" H 4808 2470 50  0000 L CNN
-F 1 "TEST_1P" H 4808 2379 50  0000 L CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm" H 125 0   50  0001 C CNN
-F 3 "" H 125 0   50  0001 C CNN
-	1    4750 2350
-	1    0    0    -1  
-$EndComp
-$Comp
 L POT RV3
 U 1 1 59060623
 P 9800 5025
@@ -935,7 +913,6 @@ Connection ~ 4450 2350
 Wire Wire Line
 	4300 3200 4300 3300
 Connection ~ 4450 2950
-Connection ~ 4750 2950
 Wire Wire Line
 	8400 5200 8525 5200
 Wire Wire Line
@@ -1004,11 +981,6 @@ Wire Notes Line
 	4650 1750 4650 600 
 Wire Notes Line
 	4650 600  3500 600 
-Wire Wire Line
-	4075 1300 4075 1400
-Wire Wire Line
-	4075 1400 3800 1400
-Connection ~ 3800 1400
 Connection ~ 9300 4725
 Wire Wire Line
 	8725 5200 8850 5200
@@ -1031,8 +1003,6 @@ Wire Wire Line
 	9450 4175 9450 3925
 Wire Wire Line
 	9450 3925 9375 3925
-Wire Wire Line
-	4750 2350 4750 2950
 Wire Wire Line
 	7825 4625 8150 4625
 Wire Wire Line
