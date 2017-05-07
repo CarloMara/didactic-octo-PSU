@@ -340,28 +340,6 @@ current_dac
 Text HLabel 7950 3600 2    60   Output ~ 0
 voltage_dac
 $Comp
-L R R21
-U 1 1 590CF4AD
-P 1375 1775
-F 0 "R21" H 1445 1821 50  0000 L CNN
-F 1 "10k" H 1445 1730 50  0000 L CNN
-F 2 "Resistors_SMD:R_1206_HandSoldering" V 55  0   50  0001 C CNN
-F 3 "" H 125 0   50  0001 C CNN
-	1    1375 1775
-	1    0    0    -1  
-$EndComp
-$Comp
-L R R22
-U 1 1 590CF4F5
-P 1650 1775
-F 0 "R22" H 1720 1821 50  0000 L CNN
-F 1 "10k" H 1720 1730 50  0000 L CNN
-F 2 "Resistors_SMD:R_1206_HandSoldering" V 330 0   50  0001 C CNN
-F 3 "" H 400 0   50  0001 C CNN
-	1    1650 1775
-	1    0    0    -1  
-$EndComp
-$Comp
 L D_Schottky_AAK D9
 U 1 1 590CFC79
 P 9400 3850
@@ -670,4 +648,28 @@ Text Label 5750 2150 0    60   ~ 0
 SDA
 Text Label 6175 4925 0    60   ~ 0
 SCL
+$Comp
+L R R?
+U 1 1 590F20F0
+P 1375 1775
+F 0 "R?" H 1525 1850 50  0000 R CNN
+F 1 "1K" H 1575 1775 50  0000 R CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V 1305 1775 50  0001 C CNN
+F 3 "" H 1375 1775 50  0000 C CNN
+F 4 "3W" V 1375 1775 60  0001 C CNN "Power"
+	1    1375 1775
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 590F2272
+P 1650 1775
+F 0 "R?" H 1800 1850 50  0000 R CNN
+F 1 "1K" H 1850 1775 50  0000 R CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V 1580 1775 50  0001 C CNN
+F 3 "" H 1650 1775 50  0000 C CNN
+F 4 "3W" V 1650 1775 60  0001 C CNN "Power"
+	1    1650 1775
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
