@@ -435,7 +435,7 @@ Wire Wire Line
 Wire Wire Line
 	4925 5875 4925 5600
 Wire Wire Line
-	4750 5600 6625 5600
+	4750 5600 5300 5600
 Connection ~ 4925 5600
 Wire Wire Line
 	5300 5600 5300 5575
@@ -458,7 +458,9 @@ Wire Wire Line
 	6550 4125 7225 4125
 Connection ~ 5300 2900
 Wire Wire Line
-	6625 5600 6625 4325
+	5325 5575 6625 5575
+Wire Wire Line
+	6625 5575 6625 4325
 Wire Wire Line
 	6625 4325 7225 4325
 Wire Wire Line
