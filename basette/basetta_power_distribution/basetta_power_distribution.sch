@@ -30,7 +30,7 @@ LIBS:contrib
 LIBS:valves
 LIBS:power_distribution
 LIBS:basetta_power_distribution-cache
-EELAYER 25 0
+EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -479,4 +479,18 @@ Wire Wire Line
 	6825 5475 6825 5975
 Wire Wire Line
 	6825 5975 7775 5975
+Text Label 1950 3300 0    60   ~ 0
+VIN
+$Comp
+L Earth #PWR?
+U 1 1 59108F6C
+P 2450 3500
+F 0 "#PWR?" H 0   -275 50  0001 C CNN
+F 1 "Earth" H 0   -175 50  0001 C CNN
+F 2 "" H 0   -25 50  0001 C CNN
+F 3 "" H 0   -25 50  0001 C CNN
+	1    2450 3500
+	1    0    0    -1  
+$EndComp
+Connection ~ 2450 3500
 $EndSCHEMATC
